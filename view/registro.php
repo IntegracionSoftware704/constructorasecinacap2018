@@ -6,20 +6,17 @@
         header("Location: ../index.php");
     }
 ?>
-	
-	
-	
+<div style="background-color: #c0fabe;">
 		<div class="container">
 			<div class="row main">
 				<div class="panel-heading">
 	               <div class="panel-title text-center">
-	               		<h1 class="title">Formulario de registro: </h1>
-	               		<hr />
+	               		<h4 class="title">FORMULARIO DE REGISTRO</h4>
 	               	</div>
-	            </div> 
+	            </div>
 				<div class="main-login main-center">
 					<form class="form-horizontal" method="post" action="#">
-						
+
 						<div class="form-group">
 							<label for="name" class="cols-sm-2 control-label">Nombre: </label>
 							<div class="cols-sm-10">
@@ -80,11 +77,9 @@
 				</div>
 			</div>
 		</div>
-
-		<script type="text/javascript" src="assets/js/bootstrap.js"></script>
-	
-
-
+    <br>
+    <br>
+  </div>
 <?php
     require_once("footer.php");
 ?>
