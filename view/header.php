@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="../css/carousel.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/registro.css">
+    
+    <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+   
     <script src="../js/jquery-3.3.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/menu.js"></script>
@@ -65,6 +70,7 @@
             {
                 ?>
                 <ul class="nav navbar-nav navbar-right">
+                   <li><a href="registro.php">Registrate</a></li>
                     <li><a href="login.php">Iniciar sesion</a></li>
                 </ul>
                 <?php
