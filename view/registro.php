@@ -74,7 +74,7 @@
 							<button type="button" class="btn btn-primary btn-lg btn-block login-button">Registrar: </button>
 						</div>
 						<div class="login-register">
-				            <a href="index.php">Login</a>
+				            <a href="login.php">Iniciar Sesion</a>
 				         </div>
 					</form>
 				</div>
