@@ -1,5 +1,3 @@
-<!-------------ESTO ES UNA PRUEBA----------------->
-
 <!DOCTYPE html>
 <html lang="">
 <head>
@@ -13,10 +11,10 @@
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/registro.css">
-    
+
     <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
-   
+
     <script src="../js/jquery-3.3.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/menu.js"></script>
@@ -43,13 +41,13 @@
 		</button>
 		<a class="navbar-brand" href="index.php">Constructora SEC</a>
 	</div>
-	
+
 	<div class="collapse navbar-collapse js-navbar-collapse">
 		<ul class="nav navbar-nav">
 				<li><a href="financiamiento.php">Financiamiento</a></li>
 				<li><a href="posventa.php">Posventa</a></li>
 				<li><a href="contacto.php">Contactanos</a>
-				</li>	          
+				</li>
 		</ul>
         <?php
             require_once("../modulos/isLogin.php");
@@ -63,7 +61,7 @@
                   <ul class="dropdown-menu" role="menu">
                     <li><a href="datos.php">Mis datos</a></li>
                     <li><a href="../modulos/logout.php">Cerrar Sesion</a></li>
-                  </ul> 
+                  </ul>
                 </li>
                 </ul>
                 <?php
