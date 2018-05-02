@@ -7,11 +7,97 @@
     }
 ?>
 <div class="container">
-     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet auctor quam. Nam bibendum sodales aliquet. Donec convallis vulputate urna a porta. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean elementum non sapien non tincidunt. Nulla eleifend posuere pellentesque. Proin accumsan commodo vehicula. Curabitur et tortor dolor. Proin non arcu fermentum urna gravida cursus eu nec risus. Maecenas sem est, tristique ut egestas sed, sodales eu dui. Aenean commodo, ipsum vitae gravida lacinia, dui risus faucibus metus, vel suscipit metus orci sed tellus.
-
-    Nulla sollicitudin mauris est, sed faucibus est semper et. Fusce pellentesque tortor id justo luctus, nec accumsan ante elementum. Quisque mattis justo vitae felis porta maximus. Vestibulum sollicitudin, lacus et ullamcorper dapibus, lorem lectus euismod justo, sit amet consectetur diam velit a arcu. Morbi sodales dolor ac tortor porttitor, ac gravida leo efficitur. Proin iaculis ornare turpis eget pellentesque. Duis vel gravida tortor. Fusce pretium tortor quis felis accumsan, sed congue velit placerat. Duis eget magna blandit sem tristique tempus.
-
-    Fusce posuere turpis vitae enim ultricies, eget molestie arcu iaculis. Nam commodo dignissim sem quis pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus efficitur lorem eu ligula suscipit, eget gravida augue facilisis. Fusce suscipit, nunc at sollicitudin posuere, ex mauris sagittis velit, quis lobortis odio lacus quis nisl. Phasellus pulvinar dictum nisi non vulputate. Maecenas commodo consequat sagittis. Aliquam porta aliquet ex, at consectetur diam vestibulum at. 
+<div class="row">
+    <div class="col-sm-12 col-md-10 col-md-offset-1">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th class="text-center">Precio</th>
+                    <th class="text-center">Total</th>
+                    <th> </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="col-sm-8 col-md-6">
+                    <div class="media">
+                        <a class="thumbnail pull-left" href="#"> <img class="media-object" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png" style="width: 72px; height: 72px;"> </a>
+                        <div class="media-body">
+                            <h4 class="media-heading"><a href="#">Nombre del Producto</a></h4>
+                            <h5 class="media-heading"> by <a href="#">Nombre del material</a></h5>
+                            <span>Status: </span><span class="text-success"><strong>In Stock</strong></span>
+                        </div>
+                    </div></td>
+                    <td class="col-sm-1 col-md-1" style="text-align: center">
+                    <input type="email" class="form-control" id="exampleInputEmail1" value="3">
+                    </td>
+                    <td class="col-sm-1 col-md-1 text-center"><strong>$4.87</strong></td>
+                    <td class="col-sm-1 col-md-1 text-center"><strong>$14.61</strong></td>
+                    <td class="col-sm-1 col-md-1">
+                    <button type="button" class="btn btn-danger">
+                        <span class="glyphicon glyphicon-remove"></span> Remover
+                    </button></td>
+                </tr>
+                <tr>
+                    <td class="col-md-6">
+                    <div class="media">
+                        <a class="thumbnail pull-left" href="#"> <img class="media-object" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png" style="width: 72px; height: 72px;"> </a>
+                        <div class="media-body">
+                            <h4 class="media-heading"><a href="#">Nombre del producto</a></h4>
+                            <h5 class="media-heading"> by <a href="#">Nombre del material</a></h5>
+                            <span>Status: </span><span class="text-warning"><strong>Leaves warehouse in 2 - 3 weeks</strong></span>
+                        </div>
+                    </div></td>
+                    <td class="col-md-1" style="text-align: center">
+                    <input type="email" class="form-control" id="exampleInputEmail1" value="2">
+                    </td>
+                    <td class="col-md-1 text-center"><strong>$4.99</strong></td>
+                    <td class="col-md-1 text-center"><strong>$9.98</strong></td>
+                    <td class="col-md-1">
+                    <button type="button" class="btn btn-danger">
+                        <span class="glyphicon glyphicon-remove"></span> Remover
+                    </button></td>
+                </tr>
+                <tr>
+                    <td>   </td>
+                    <td>   </td>
+                    <td>   </td>
+                    <td><h5>Subtotal</h5></td>
+                    <td class="text-right"><h5><strong>$24.59</strong></h5></td>
+                </tr>
+                <tr>
+                    <td>   </td>
+                    <td>   </td>
+                    <td>   </td>
+                    <td><h5>Estimated shipping</h5></td>
+                    <td class="text-right"><h5><strong>$6.94</strong></h5></td>
+                </tr>
+                <tr>
+                    <td>   </td>
+                    <td>   </td>
+                    <td>   </td>
+                    <td><h3>Total</h3></td>
+                    <td class="text-right"><h3><strong>$31.53</strong></h3></td>
+                </tr>
+                <tr>
+                    <td>   </td>
+                    <td>   </td>
+                    <td>   </td>
+                    <td>
+                    <button type="button" class="btn btn-default">
+                        <span class="glyphicon glyphicon-shopping-cart"></span> Continue comprando
+                    </button></td>
+                    <td>
+                    <button type="button" class="btn btn-success">
+                        Revisar <span class="glyphicon glyphicon-play"></span>
+                    </button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
 </div>
 <?php
     require_once("footer.php");
