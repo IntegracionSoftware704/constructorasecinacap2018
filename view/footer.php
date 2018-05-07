@@ -1,7 +1,7 @@
 <footer class="footer-bs">
         <div class="row">
         	<div class="col-md-3 footer-brand animated fadeInLeft">
-            	<h2>Constructora SEC</h2>
+            	<h2 style="color: #549a46;">Constructora SEC</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed massa vestibulum, sollicitudin augue vel, finibus mi. Nullam malesuada hendrerit lectus, malesuada</p>
                 <p>© 2018 Constructora SEC, Valdivia</p>
             </div>
