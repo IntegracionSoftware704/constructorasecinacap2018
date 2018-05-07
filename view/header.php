@@ -14,12 +14,17 @@
 
     <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+    
+    <link href="../css/siderbar.css" rel="stylesheet" type="text/css">
+    
+    
 
     <script src="../js/jquery-3.3.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/menu.js"></script>
     <script src="../js/carousel.js"></script>
     <script src="../js/login.js"></script>
+    
 </head>
 
 <body>
