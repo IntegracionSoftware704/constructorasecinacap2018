@@ -10,12 +10,14 @@
         if($usuario==$dato["user"] && $password==$dato["pass"])
         {
             $valid = true;
+            $grupo = $dato["grupo"];
         }
     }
     if($valid)
     {
         session_start();
         $_SESSION['nom'] = $usuario;
+        $_SESSION['rol'] = $grupo;
         header("Location: ../index.php");
     }
     else
