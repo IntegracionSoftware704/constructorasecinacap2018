@@ -11,20 +11,21 @@
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/registro.css">
+    <link rel="stylesheet" href="../css/gestionplanilla.css">
 
     <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
-    
+
     <link href="../css/siderbar.css" rel="stylesheet" type="text/css">
-    
-    
+
+
 
     <script src="../js/jquery-3.3.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/menu.js"></script>
     <script src="../js/carousel.js"></script>
     <script src="../js/login.js"></script>
-    
+
 </head>
 
 <body>
@@ -64,6 +65,7 @@
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Bienvenido <?php echo $_SESSION['nom']; ?> <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
+                    <li><a href="#"><strong>Rol: <?php echo $_SESSION['rol']; ?></strong></a></li>
                     <li><a href="datos.php">Mis datos</a></li>
                     <li><a href="../modulos/logout.php">Cerrar Sesion</a></li>
                   </ul>
