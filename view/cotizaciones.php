@@ -1,6 +1,40 @@
+<?php
+    require_once("header.php");
+    require_once("../modulos/isLogin.php");
+    if(!($estado))
+    {
+        header("Location: ../index.php");
+    }
+?>
+<div class="menu-fila">
+    <div class="container">
+<nav class="navbar-default">
+<div class="navbar-header">
+  <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+  <span class="sr-only">Toggle navigation</span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="#">Panel de control</a>
+</div>
+
+<div class="collapse navbar-collapse js-navbar-collapse">
+<ul class="nav navbar-nav">
+    <li><a href="panelcontrol.php">Inicio</a></li>
+    <li><a href="gestionplanilla.php">Gestion planillas</a></li>
+    <li><a href="gestionmateriales.php">Gestion Materiales</a>
+    <li><a href="cotizaciones.php">Cotizacion</a>
+    </li>
+</div><!-- /.nav-collapse -->
+</nav>
+</div>
+</div>
 <div class="container">
 <div class="row">
-    <div class="col-sm-10 col-md-10">
+    <div>
+      <h2>Cotizaciones</h2>
+      <br>
         <table class="table table-hover">
             <thead>
                 <tr>
@@ -89,3 +123,6 @@
     </div>
 </div>
 </div>
+<?php
+    require_once("footer.php");
+?>
