@@ -10,9 +10,10 @@
             $this->db=Conectar::conexion();
             $this->usuarios=array();
         }
-        public function getUsuarios()
+        public function getUsuarios($rol)
         {
-            $consulta=$this->db->query("select * from usuarios;");
+            $sql = "select * from ". $rol;
+            $consulta=$this->db->query($sql);
             while($filas=$consulta->fetch_assoc())
             {
                 $this->usuarios[]=$filas;

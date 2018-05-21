@@ -1,22 +1,32 @@
 <?php
     $valid = false;
-    $usuario = $_POST['usuario'];
+    $correo = $_POST['usuario'];
     $password = $_POST['passwd'];
     require_once("../model/transacbd.php");
     $usu=new transacciones_modelo();
-    $datos=$usu->getUsuarios();
+    if(substr_compare($correo, "constructorasec.com", -19, 19) == 0)
+    {
+        $datos=$usu->getUsuarios('administrador');
+        $grupo = "administrador";
+    }
+    else
+    {
+        $datos=$usu->getUsuarios('cliente');
+        $grupo = "usuario";
+    }
     foreach ($datos as $dato)
     {
-        if($usuario==$dato["user"] && $password==$dato["pass"])
+        if($correo==$dato["correoelectronico"] && $password==$dato["contrasena"])
         {
             $valid = true;
-            $grupo = $dato["grupo"];
+            $nom = $dato["nombre"];
         }
     }
     if($valid)
     {
         session_start();
-        $_SESSION['nom'] = $usuario;
+        $_SESSION['email'] = $correo;
+        $_SESSION['nom'] = $nom;
         $_SESSION['rol'] = $grupo;
         header("Location: ../index.php");
     }
