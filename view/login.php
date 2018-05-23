@@ -4,6 +4,7 @@
     if($estado)
     {
         header("Location: ../index.php");
+        exit;
     }
 ?>
 <div style="background-color: #c0fabe;">
@@ -16,7 +17,20 @@
                 <span id="reauth-email" class="reauth-email"></span>
                 <input type="text" name="usuario" class="form-control" placeholder="Correo electronico" required autofocus>
                 <input type="password" name="passwd" class="form-control" placeholder="Contraseña" required>
-                <br>
+                <?php
+                  if(isset($_GET['error']))
+                  {
+                      ?>
+                      <p style="color:red;">Usuario y/o constraseña erroneo</p>
+                      <?php
+                  }
+                  else
+                  {
+                      ?>
+                      <br>
+                      <?php
+                  }
+                ?>
                 <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign in</button>
             </form><!-- /form -->
         </div><!-- /card-container -->
