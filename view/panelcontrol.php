@@ -39,42 +39,42 @@
   <br>
   <div class="row">
       <div class="col-md-3" style="background:#46d140;">
-        <a href="#"><img src="../img/plani1.jpg" class="img-thumbnail" alt="Cinque Terre" width="300"></a>
+        <a href="http://localhost/constructorasecinacap2018/view/gestionplanilla.php?id=1"><img src="../img/plani1.jpg" class="img-thumbnail" alt="Cinque Terre" width="300"></a>
         <h5>Planilla 1</h5>
         <h5><strong>Costo total: $5.000.000<strong></h5>
       </div>
       <div class="col-md-3" style="background: #73fe5a;">
-        <a href="#"><img src="../img/plani1.jpg" class="img-thumbnail" alt="Cinque Terre" width="300"></a>
+        <a href="http://localhost/constructorasecinacap2018/view/gestionplanilla.php?id=2"><img src="../img/plani1.jpg" class="img-thumbnail" alt="Cinque Terre" width="300"></a>
         <h5>Planilla 2</h5>
         <h5><strong>Costo total: $5.000.000<strong></h5>
       </div>
       <div class="col-md-3" style="background:#46d140;">
-        <a href="#"><img src="../img/plani1.jpg" class="img-thumbnail" alt="Cinque Terre" width="300"></a>
+        <a href="http://localhost/constructorasecinacap2018/view/gestionplanilla.php?id=2"><img src="../img/plani1.jpg" class="img-thumbnail" alt="Cinque Terre" width="300"></a>
         <h5>Planilla 3</h5>
         <h5><strong>Costo total: $5.000.000<strong></h5>
       </div>
       <div class="col-md-3" style="background: #73fe5a;">
-        <a href="#"><img src="../img/plani1.jpg" class="img-thumbnail" alt="Cinque Terre" width="300"></a>
+        <a href="http://localhost/constructorasecinacap2018/view/gestionplanilla.php?id=3"><img src="../img/plani1.jpg" class="img-thumbnail" alt="Cinque Terre" width="300"></a>
         <h5>Planilla 4</h5>
         <h5><strong>Costo total: $5.000.000<strong></h5>
       </div>
       <div class="col-md-3" style="background:#46d140;">
-        <a href="#"><img src="../img/plani1.jpg" class="img-thumbnail" alt="Cinque Terre" width="300"></a>
+        <a href="http://localhost/constructorasecinacap2018/view/gestionplanilla.php?id=4"><img src="../img/plani1.jpg" class="img-thumbnail" alt="Cinque Terre" width="300"></a>
         <h5>Planilla 5</h5>
         <h5><strong>Costo total: $5.000.000<strong></h5>
       </div>
       <div class="col-md-3" style="background: #73fe5a;">
-        <a href="#"><img src="../img/plani1.jpg" class="img-thumbnail" alt="Cinque Terre" width="300"></a>
+        <a href="http://localhost/constructorasecinacap2018/view/gestionplanilla.php?id=5"><img src="../img/plani1.jpg" class="img-thumbnail" alt="Cinque Terre" width="300"></a>
         <h5>Planilla 6</h5>
         <h5><strong>Costo total: $5.000.000<strong></h5>
       </div>
       <div class="col-md-3" style="background:#46d140;">
-        <a href="#"><img src="../img/plani1.jpg" class="img-thumbnail" alt="Cinque Terre" width="300"></a>
+        <a href="http://localhost/constructorasecinacap2018/view/gestionplanilla.php?id=6"><img src="../img/plani1.jpg" class="img-thumbnail" alt="Cinque Terre" width="300"></a>
         <h5>Planilla 5</h5>
         <h5><strong>Costo total: $5.000.000<strong></h5>
       </div>
       <div class="col-md-3" style="background: #73fe5a;">
-        <a href="#"><img src="../img/plani1.jpg" class="img-thumbnail" alt="Cinque Terre" width="300"></a>
+        <a href="http://localhost/constructorasecinacap2018/view/gestionplanilla.php?id=7"><img src="../img/plani1.jpg" class="img-thumbnail" alt="Cinque Terre" width="300"></a>
         <h5>Planilla 6</h5>
         <h5><strong>Costo total: $5.000.000<strong></h5>
       </div>

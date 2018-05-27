@@ -18,6 +18,8 @@
 
     <link href="../css/siderbar.css" rel="stylesheet" type="text/css">
 
+    <script src="https://use.fontawesome.com/07b0ce5d10.js"></script>
+
 
 
     <script src="../js/jquery-3.3.1.min.js"></script>

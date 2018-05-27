@@ -9,3 +9,17 @@
     box-shadow: 3px 3px 0px transparent;
     transition: 0.5s;
     }
+.container::-webkit-scrollbar
+{
+    width: 7px;
+    background: #000;
+
+
+}
+.container::-webkit-scrollbar-thumb
+{
+    background: #1cb715;
+    border-radius: 5px;
+
+
+}
