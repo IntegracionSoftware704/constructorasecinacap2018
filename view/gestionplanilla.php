@@ -36,145 +36,84 @@
 </div>
 
 <div class="container">
-  <h2>Gestion Planillas</h2>
-  <br>
+<h2>Gestion Planillas</h2>
   
-    <table class="table table-condensed">
-    <thead>
-    <div class="plantilla">
-    <div class="row">
-      <div class="col-md-3" style="background:#46d140;">
+    <section class="main row">
+        <article class="col-md-9">
+            
+        <div class="col-md-3" style="background:#46d140;">
         <a href="http://localhost/constructorasecinacap2018/view/gestionplanilla.php?id=1"><img src="../img/plani1.jpg" class="img-thumbnail" alt="Cinque Terre" width="300"></a>
         <h5>Planilla 1</h5>
         <h5><strong>Costo total: $5.000.000<strong></h5>
       </div>
 
-      <div class="row">
-      <div class="col-md-1" style="background:#1cb715;">
-      <a class='btn btn-succes' href=http://localhost/constructorasecinacap2018/view/panelcontrol.php>
-      <span class="glyphicon glyphicon-edit">
-          </span>Volver</a>
-           
-      </div>
-      
-      </div>
-      <br>
-      <br>
-      
-      <tr>
-            <th>ID</th>
-            <th>Tipo de Material</th>
-            <th>Nombre</th>
-            <th>Caracteristica</th>
-            <th>Precio</th>
-            <th>Dato 6</th>
-            <th class="text-center">Acciones</th>
-        </tr>
-    </thead>
-            <tr>
-                <td>1</td>
-                <td>News</td>
-                <td>News Cate</td>
-                <td>1</td>
-                <td>News</td>
-                <td>News Cate</td>
-                <td class="text-center">
-                    <a class='btn btn-info btn-xs' href="javascript:window.open('agregarplanillas.php','','top=50,left=100,width=700,height=500');void 0">
-                        <span class="glyphicon glyphicon-edit">
-                            </span>Editar</a>
-                             <a href="javascript:confirmEliminar()" class="btn btn-danger btn-xs">
-                                 <span class="glyphicon glyphicon-remove">
-                                     </span>Eliminar</a>
-                                    </td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Products</td>
-                <td>Main Products</td>
-                <td>1</td>
-                <td>News</td>
-                <td>News Cate</td>
-                <td class="text-center"><a class='btn btn-info btn-xs' href="javascript:window.open('agregarplanillas.php','','top=50,left=100,width=700,height=500');void 0"><span class="glyphicon glyphicon-edit"></span>Editar</a> <a href="javascript:confirmEliminar()" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span>Eliminar</a></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Blogs</td>
-                <td>Parent Blogs</td>
-                <td>1</td>
-                <td>News</td>
-                <td>News Cate</td>
-                <td class="text-center"><a class='btn btn-info btn-xs' href="javascript:window.open('agregarplanillas.php','','top=50,left=100,width=700,height=500');void 0"><span class="glyphicon glyphicon-edit"></span>Editar</a> <a href="javascript:confirmEliminar()" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span>Eliminar</a></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Blogs</td>
-                <td>Parent Blogs</td>
-                <td>1</td>
-                <td>News</td>
-                <td>News Cate</td>
-                <td class="text-center"><a class='btn btn-info btn-xs' href="javascript:window.open('agregarplanillas.php','','top=50,left=100,width=700,height=500');void 0"><span class="glyphicon glyphicon-edit"></span>Editar</a> <a href="javascript:confirmEliminar()" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span>Eliminar</a></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Blogs</td>
-                <td>Parent Blogs</td>
-                <td>1</td>
-                <td>News</td>
-                <td>News Cate</td>
-                <td class="text-center"><a class='btn btn-info btn-xs' href="javascript:window.open('agregarplanillas.php','','top=50,left=100,width=700,height=500');void 0"><span class="glyphicon glyphicon-edit"></span>Editar</a> <a href="javascript:confirmEliminar()" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span>Eliminar</a></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Blogs</td>
-                <td>Parent Blogs</td>
-                <td>1</td>
-                <td>News</td>
-                <td>News Cate</td>
-                <td class="text-center"><a class='btn btn-info btn-xs' href="javascript:window.open('agregarplanillas.php','','top=50,left=100,width=700,height=500');void 0"><span class="glyphicon glyphicon-edit"></span>Editar</a> <a href="javascript:confirmEliminar()" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span>Eliminar</a></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Blogs</td>
-                <td>Parent Blogs</td>
-                <td>1</td>
-                <td>News</td>
-                <td>News Cate</td>
-                <td class="text-center"><a class='btn btn-info btn-xs' href="javascript:window.open('agregarplanillas.php','','top=50,left=100,width=700,height=500');void 0"><span class="glyphicon glyphicon-edit"></span>Editar</a> <a href="javascript:confirmEliminar()" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span>Eliminar</a></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Blogs</td>
-                <td>Parent Blogs</td>
-                <td>1</td>
-                <td>News</td>
-                <td>News Cate</td>
-                <td class="text-center"><a class='btn btn-info btn-xs' href="javascript:window.open('agregarplanillas.php','','top=50,left=100,width=700,height=500');void 0"><span class="glyphicon glyphicon-edit"></span>Editar</a> <a href="javascript:confirmEliminar()" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span>Eliminar</a></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Blogs</td>
-                <td>Parent Blogs</td>
-                <td>1</td>
-                <td>News</td>
-                <td>News Cate</td>
-                <td class="text-center"><a class='btn btn-info btn-xs' href="javascript:window.open('agregarplanillas.php','','top=50,left=100,width=700,height=500');void 0"><span class="glyphicon glyphicon-edit"></span>Editar</a> <a href="javascript:confirmEliminar()" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span>Eliminar</a></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Blogs</td>
-                <td>Parent Blogs</td>
-                <td>1</td>
-                <td>News</td>
-                <td>News Cate</td>
-                <td class="text-center"><a class='btn btn-info btn-xs' href="javascript:window.open('agregarplanillas.php','','top=50,left=100,width=700,height=500');void 0"><span class="glyphicon glyphicon-edit"></span>Editar</a> <a href="javascript:confirmEliminar()" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span>Eliminar</a></td>
-            </tr>
-	
-      
+        </article>
+        <aside class="col-md-3">
 
+        <a class='btn btn-succes' href="http://localhost/constructorasecinacap2018/view/panelcontrol.php">
+                    <button type="button" class="btn btn-success">
+                        Volver</button>
+                        </a>
+            
+        </aside>
 
-      
-    </table>
+    </section>
+    <div class="row">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4>
+            Fixed Header Scrolling Table 
+          </h4>
+        </div>
+        <table class="table table-fixed">
+          <thead>
+            <tr>
+              <th class="col-xs-2">#</th><th class="col-xs-8">Name</th><th class="col-xs-2">Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="col-xs-2">1</td><td class="col-xs-8">Mike Adams</td><td class="col-xs-2">23</td>
+            </tr>
+            <tr>
+              <td class="col-xs-2">2</td><td class="col-xs-8">Holly Galivan</td><td class="col-xs-2">44</td>
+            </tr>
+            <tr>
+              <td class="col-xs-2">3</td><td class="col-xs-8">Mary Shea</td><td class="col-xs-2">86</td>
+            </tr>
+            <tr>
+              <td class="col-xs-2">4</td><td class="col-xs-8">Jim Adams</td><td>23</td>
+            </tr>
+            <tr>
+              <td class="col-xs-2">5</td><td class="col-xs-8">Henry Galivan</td><td class="col-xs-2">44</td>
+            </tr>
+            <tr>
+              <td class="col-xs-2">6</td><td class="col-xs-8">Bob Shea</td><td class="col-xs-2">26</td>
+            </tr>
+            <tr>
+              <td class="col-xs-2">7</td><td class="col-xs-8">Andy Parks</td><td class="col-xs-2">56</td>
+            </tr>
+            <tr>
+              <td class="col-xs-2">8</td><td class="col-xs-8">Bob Skelly</td><td class="col-xs-2">96</td>
+            </tr>
+            <tr>
+              <td class="col-xs-2">9</td><td class="col-xs-8">William Defoe</td><td class="col-xs-2">13</td>
+            </tr>
+            <tr>
+              <td class="col-xs-2">10</td><td class="col-xs-8">Will Tripp</td><td class="col-xs-2">16</td>
+            </tr>
+            <tr>
+              <td class="col-xs-2">11</td><td class="col-xs-8">Bill Champion</td><td class="col-xs-2">44</td>
+            </tr>
+            <tr>
+              <td class="col-xs-2">12</td><td class="col-xs-8">Lastly Jane</td><td class="col-xs-2">6</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  </div>
 </div>
+
 <script>
 function confirmEliminar() {
     var txt;

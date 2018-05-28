@@ -9,17 +9,18 @@
     box-shadow: 3px 3px 0px transparent;
     transition: 0.5s;
     }
-.container::-webkit-scrollbar
-{
-    width: 7px;
-    background: #000;
-
-
-}
-.container::-webkit-scrollbar-thumb
-{
-    background: #1cb715;
-    border-radius: 5px;
-
-
-}
+    .table-fixed thead {
+        width: 97%;
+      }
+      .table-fixed tbody {
+        height: 230px;
+        overflow-y: auto;
+        width: 100%;
+      }
+      .table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {
+        display: block;
+      }
+      .table-fixed tbody td, .table-fixed thead > tr> th {
+        float: left;
+        border-bottom-width: 0;
+      }
