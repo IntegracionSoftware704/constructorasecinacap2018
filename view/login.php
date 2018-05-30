@@ -6,6 +6,12 @@
         header("Location: ../index.php");
         exit;
     }
+    if(isset($_GET['registro']))
+    {
+      ?>
+      <script>alert("Registro correcto, favor ingrese");</script>
+      <?php
+    }
 ?>
 <div style="background-color: #c0fabe;">
     <div class="container">

@@ -7,78 +7,82 @@
     }
 ?>
 <div style="background-color: #c0fabe;">
-		<div class="container">
-			<div class="row main">
-				<div class="panel-heading">
-	               <div class="panel-title text-center">
-	               		<h4 class="title">FORMULARIO DE REGISTRO</h4>
-	               	</div>
-	            </div>
-				<div class="main-login main-center">
-					<form class="form-horizontal" method="post" action="#">
+  <div class="container">
+    <div class="row">
+      <form class="form-horizontal" method="post" action="../controller/agregarUsuario.php">
+        <fieldset>
+<h4>REGISTRO USUARIO</h4>
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="correo">Correo electronico</label>
+  <div class="col-md-4">
+    <input id="correo" name="correo" type="text" placeholder="Correo" class="form-control input-md">
 
-						<div class="form-group">
-							<label for="name" class="cols-sm-2 control-label">Nombre: </label>
-							<div class="cols-sm-10">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="name" id="name"  placeholder="Nombre: "/>
-								</div>
-							</div>
-						</div>
+  </div>
+</div>
 
-						<div class="form-group">
-							<label for="email" class="cols-sm-2 control-label">Correo electronico: </label>
-							<div class="cols-sm-10">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="email" id="email"  placeholder="Correo electronico"/>
-								</div>
-							</div>
-						</div>
+<!-- Text input-->
+<div class="form-group">
+<label class="col-md-4 control-label" for="name">Nombres</label>
+<div class="col-md-4">
+<input id="name" name="name" type="text" placeholder="Name" class="form-control input-md">
 
-						<div class="form-group">
-							<label for="username" class="cols-sm-2 control-label">Nombre de usuario: </label>
-							<div class="cols-sm-10">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="username" id="username"  placeholder="Nombre de usuario "/>
-								</div>
-							</div>
-						</div>
+</div>
+</div>
 
-						<div class="form-group">
-							<label for="password" class="cols-sm-2 control-label">Contraseña: </label>
-							<div class="cols-sm-10">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-									<input type="password" class="form-control" name="password" id="password"  placeholder="Contraseña"/>
-								</div>
-							</div>
-						</div>
+<!-- Text input-->
+<div class="form-group">
+<label class="col-md-4 control-label" for="apellido">Apellidos</label>
+<div class="col-md-4">
+<input id="apellido" name="apellido" type="text" placeholder="Apellido" class="form-control input-md">
 
-						<div class="form-group">
-							<label for="confirm" class="cols-sm-2 control-label">Confirmar contraseña: </label>
-							<div class="cols-sm-10">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-									<input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Confirmar contraseña"/>
-								</div>
-							</div>
-						</div>
+</div>
+</div>
 
-						<div class="form-group ">
-							<button type="button" class="btn btn-primary btn-lg btn-block login-button">Registrar: </button>
-						</div>
-						<div class="login-register">
-				            <a href="login.php">Iniciar Sesion</a>
-				         </div>
-					</form>
-				</div>
-			</div>
-		</div>
-    <br>
-    <br>
+
+<div class="form-group">
+<label class="col-md-4 control-label" for="password">Constraseña</label>
+<div class="col-md-4">
+<input id="password" name="password" type="password" placeholder="Password" class="form-control input-md">
+
+</div>
+</div>
+
+<div class="form-group">
+<label class="col-md-4 control-label" for="confirm">Confirmar constraseña</label>
+<div class="col-md-4">
+<input id="confirm" name="confirm" type="password" placeholder="Confirm" class="form-control input-md">
+<?php
+  if(isset($_GET['error']))
+  {
+    if($_GET['error'] == 1)
+    {
+      ?>
+      <script>alert("Contraseñas no coinciden");</script>
+      <?php
+    }
+  }
+?>
+</div>
+</div>
+
+<div class="form-group">
+<label class="col-md-4 control-label" for="telefono">Telefono</label>
+<div class="col-md-4">
+<input id="telefono" name="telefono" type="text" placeholder="Telefono" class="form-control input-md">
+
+</div>
+</div>
+<!-- Button -->
+<div class="form-group">
+<label class="col-md-4 control-label" for="reg"></label>
+<div class="col-md-4">
+  <button id="reg" name="reg" class="btn btn-primary">Register</button>
+</div>
+</div>
+
+</fieldset>
+</form>
   </div>
 <?php
     require_once("footer.php");
