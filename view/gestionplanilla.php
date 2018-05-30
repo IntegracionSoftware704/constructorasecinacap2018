@@ -68,12 +68,12 @@
         <table class="table table-fixed">
           <thead>
             <tr>
-              <th class="col-xs-2">Nombre</th><th class="col-xs-8">Caracteristica</th><th class="col-xs-2">Precio</th>
+              <th class="col-xs-1">Nombre</th><th class="col-xs-3">Caracteristica</th><th class="col-xs-8">Precio</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td class="col-xs-2">
+              <td class="col-xs-1">
               <select name="cars">
               <option value="volvo">Volvo</option>
               <option value="saab">Saab</option>
@@ -82,15 +82,15 @@
               </select>
 
             </td>
-            <td class="col-xs-8">
+            <td class="col-xs-3">
                 <input type="text" name="caracteristica1" value="">
             </td>
-            <td class="col-xs-2">
+            <td class="col-xs-8">
                 <input type="text" name="Precio1" value="">
             </td>
             </tr>
             <tr>
-            <td class="col-xs-2">
+            <td class="col-xs-1">
             <select name="cars">
             <option value="volvo">Volvo</option>
             <option value="saab">Saab</option>
@@ -99,15 +99,15 @@
             </select>
 
           </td>
-          <td class="col-xs-8">
+          <td class="col-xs-3">
               <input type="text" name="caracteristica1" value="">
           </td>
-          <td class="col-xs-2">
+          <td class="col-xs-8">
               <input type="text" name="Precio1" value="">
           </td>
           </tr>
           <tr>
-          <td class="col-xs-2">
+          <td class="col-xs-1">
           <select name="cars">
           <option value="volvo">Volvo</option>
           <option value="saab">Saab</option>
@@ -116,15 +116,15 @@
           </select>
 
         </td>
-        <td class="col-xs-8">
+        <td class="col-xs-3">
             <input type="text" name="caracteristica1" value="">
         </td>
-        <td class="col-xs-2">
+        <td class="col-xs-8">
             <input type="text" name="Precio1" value="">
         </td>
         </tr>
         <tr>
-        <td class="col-xs-2">
+        <td class="col-xs-1">
         <select name="cars">
         <option value="volvo">Volvo</option>
         <option value="saab">Saab</option>
@@ -133,15 +133,15 @@
         </select>
 
       </td>
-      <td class="col-xs-8">
+      <td class="col-xs-3">
           <input type="text" name="caracteristica1" value="">
       </td>
-      <td class="col-xs-2">
+      <td class="col-xs-8">
           <input type="text" name="Precio1" value="">
       </td>
       </tr>
       <tr>
-      <td class="col-xs-2">
+      <td class="col-xs-1">
       <select name="cars">
       <option value="volvo">Volvo</option>
       <option value="saab">Saab</option>
@@ -150,15 +150,15 @@
       </select>
 
     </td>
-    <td class="col-xs-8">
+    <td class="col-xs-3">
         <input type="text" name="caracteristica1" value="">
     </td>
-    <td class="col-xs-2">
+    <td class="col-xs-8">
         <input type="text" name="Precio1" value="">
     </td>
     </tr>
     <tr>
-    <td class="col-xs-2">
+    <td class="col-xs-1">
     <select name="cars">
     <option value="volvo">Volvo</option>
     <option value="saab">Saab</option>
@@ -167,15 +167,15 @@
     </select>
 
   </td>
-  <td class="col-xs-8">
+  <td class="col-xs-3">
       <input type="text" name="caracteristica1" value="">
   </td>
-  <td class="col-xs-2">
+  <td class="col-xs-8">
       <input type="text" name="Precio1" value="">
   </td>
   </tr>
   <tr>
-  <td class="col-xs-2">
+  <td class="col-xs-1">
   <select name="cars">
   <option value="volvo">Volvo</option>
   <option value="saab">Saab</option>
@@ -184,15 +184,15 @@
   </select>
 
 </td>
-<td class="col-xs-8">
+<td class="col-xs-3">
     <input type="text" name="caracteristica1" value="">
 </td>
-<td class="col-xs-2">
+<td class="col-xs-8">
     <input type="text" name="Precio1" value="">
 </td>
 </tr>
 <tr>
-<td class="col-xs-2">
+<td class="col-xs-1">
 <select name="cars">
 <option value="volvo">Volvo</option>
 <option value="saab">Saab</option>
@@ -201,15 +201,15 @@
 </select>
 
 </td>
-<td class="col-xs-8">
+<td class="col-xs-3">
   <input type="text" name="caracteristica1" value="">
 </td>
-<td class="col-xs-2">
+<td class="col-xs-8">
   <input type="text" name="Precio1" value="">
 </td>
 </tr>
 <tr>
-<td class="col-xs-2">
+<td class="col-xs-1">
 <select name="cars">
 <option value="volvo">Volvo</option>
 <option value="saab">Saab</option>
@@ -218,15 +218,15 @@
 </select>
 
 </td>
-<td class="col-xs-8">
+<td class="col-xs-3">
   <input type="text" name="caracteristica1" value="">
 </td>
-<td class="col-xs-2">
+<td class="col-xs-8">
   <input type="text" name="Precio1" value="">
 </td>
 </tr>
 <tr>
-<td class="col-xs-2">
+<td class="col-xs-1">
 <select name="cars">
 <option value="volvo">Volvo</option>
 <option value="saab">Saab</option>
@@ -235,15 +235,15 @@
 </select>
 
 </td>
-<td class="col-xs-8">
+<td class="col-xs-3">
   <input type="text" name="caracteristica1" value="">
 </td>
-<td class="col-xs-2">
+<td class="col-xs-8">
   <input type="text" name="Precio1" value="">
 </td>
 </tr>
 <tr>
-<td class="col-xs-2">
+<td class="col-xs-1">
 <select name="cars">
 <option value="volvo">Volvo</option>
 <option value="saab">Saab</option>
@@ -252,15 +252,15 @@
 </select>
 
 </td>
-<td class="col-xs-8">
+<td class="col-xs-3">
   <input type="text" name="caracteristica1" value="">
 </td>
-<td class="col-xs-2">
+<td class="col-xs-8">
   <input type="text" name="Precio1" value="">
 </td>
 </tr>
 <tr>
-<td class="col-xs-2">
+<td class="col-xs-1">
 <select name="cars">
 <option value="volvo">Volvo</option>
 <option value="saab">Saab</option>
@@ -269,17 +269,46 @@
 </select>
 
 </td>
-<td class="col-xs-8">
+<td class="col-xs-3">
   <input type="text" name="caracteristica1" value="">
 </td>
-<td class="col-xs-2">
+<td class="col-xs-8">
   <input type="text" name="Precio1" value="">
 </td>
 </tr>
+
           </tbody>
         </table>
       </div>
-  </div>
+      <div class=" gestion row">
+      <div class="col-md-9">
+      
+      </div>
+      <div class="col-md-3">
+      <label for="male">Costo:</label>
+      <input type="text" name="caracteristica1" value="">
+      </div>
+      </div>
+
+      <div class="botones row">
+      <div class="col-md-6">
+      
+      </div>
+      <div class="col-md-4">
+      <button type="button" class="btn btn-success">Actualizar</button>
+      
+      </div>
+      <div class="col-md-2">
+      <button type="button" class="btn btn-success">Eliminar</button>
+      
+      </div>
+
+      </div>
+
+
+
+
+     </div>
 </div>
 
 <script>
