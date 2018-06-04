@@ -24,7 +24,7 @@
     <li><a href="panelcontrol.php">Inicio</a></li>
     <li><a href="gestionplanilla.php">Gestion planillas</a></li>
     <li><a href="gestionmateriales.php">Gestion Materiales</a>
-    <li><a href="cotizaciones.php">Cotizacion</a>
+    
     </li>
 </ul>
 <ul class="nav navbar-nav navbar-right">

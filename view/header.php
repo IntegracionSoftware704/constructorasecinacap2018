@@ -52,8 +52,7 @@
 
 	<div class="collapse navbar-collapse js-navbar-collapse">
 		<ul class="nav navbar-nav">
-				<li><a href="financiamiento.php">Financiamiento</a></li>
-				<li><a href="posventa.php">Posventa</a></li>
+				<li><a href="laempresa.php">La Empresa</a></li>
 				<li><a href="contacto.php">Contactanos</a>
 				</li>
 		</ul>
