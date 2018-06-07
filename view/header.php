@@ -27,6 +27,7 @@
     <script src="../js/menu.js"></script>
     <script src="../js/carousel.js"></script>
     <script src="../js/login.js"></script>
+    <script src="../js/solonumeros.js"></script>
 
 </head>
 
