@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/registro.css">
     <link rel="stylesheet" href="../css/gestionplanilla.css">
+    <link rel="stylesheet" href="../css/contacto.css">
 
     <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
@@ -28,6 +29,7 @@
     <script src="../js/carousel.js"></script>
     <script src="../js/login.js"></script>
     <script src="../js/solonumeros.js"></script>
+    <script src="../js/contacto.js"></script>
 
 </head>
 
