@@ -34,7 +34,7 @@ if(true)
     }
     else
     {
-      header("Location: ../view/contacto.php?error=0");
+        header("Location: ../view/contacto.php?error=0");
     }
 }
 else
