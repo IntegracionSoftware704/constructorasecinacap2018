@@ -1,45 +1,149 @@
 <?php
-require_once("header.php");
+    require_once("header.php");
 ?>
 <div class="container">
-  <div class="row">
-    <h4>CONTACTO</h4>
-    <div>Si desea enviarnos una consulta, porfavor complete el siguiente formulario:</div>
-    <div class="col-md-6">
-      <div class="form-area">
-        <form method="post" action="">
-        <br style="clear:both">
-                    <h3 style="margin-bottom: 25px; text-align: center;">Formulario de contacto</h3>
-    				<div class="form-group">
-						<input type="text" class="form-control" id="name" name="name" placeholder="Nombre Apellido">
-					</div>
-					<div class="form-group">
-						<input type="text" class="form-control" id="email" name="email" placeholder="Email">
-					</div>
-					<div class="form-group">
-						<input type="text" class="form-control" onkeypress="return controltag(event)" id="mobile" name="mobile" placeholder="Telefono - Celular">
-					</div>
-					<div class="form-group">
-						<input type="text" class="form-control" id="subject" name="subject" placeholder="Asunto">
-					</div>
-                    <div class="form-group">
-                    <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Mensaje" maxlength="300" rows="7"></textarea>
-                        <span class="help-block"><p id="characterLeft" class="help-block ">Has llegado al limite de caracteres</p></span>
-                    </div>
 
-        <button id="submit" name="submit" class="btn btn-primary pull-right" onclick="javascript:alert('Se necesita de un servidor SMTP para poder enviar el formulario de contacto, sorry :( \n\nDanilo');">Enviar</button>
-        </form>
-    </div>
-    </div>
-    <div class="col-md-6">
-        <h4>Informaciones</h4>
-        <div><a href="mailto:contacto@constructorasec.com">contacto@constructorasec.com</a></div>
-        <div>Telefono: +63 2232323 / +56 2232323</div>
-        <div>Celular: +569 85698745</div>
-        <div>Direccion: Av. Vitacura 10151, Vitacura, Santiago</div>
-        <div><iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6960.804571331352!2d-73.2102507822143!3d-39.80538485966414!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1528431854334" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
-    </div>
+
+
+<div class="row">
+<br>
+<div class="Titulo">
+<h4>
+Contacto
+</h4>
+<br>
+<div class="col-md-1">
+ 
+</div>
+<div class="col-md-11">
+ <p>Si desea enviarnos una consulta, porfavor complete el siguiente formulario </p>
+</div>
+</div>
+</div>
+
+<section class="main row">
+<article class="col-md-8">
+<div style="background-color: #c0fabe;">
+  <div class="container">
+    <div class="row">
+      <form class="form-horizontal" method="post" action="../controller/envioCorreo.php">
+        <fieldset>
+		<label class="col-md-8" for="titulo"><h4>Formulario de Contacto</h4></label>
+		<br>
+		<br>
+		<br>
+		<br>
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-2 control-label" for="email">Correo electronico</label>
+  <div class="col-md-4">
+    <input id="email" name="email" type="text" placeholder="Correo" class="form-control input-md">
+
   </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+<label class="col-md-2 control-label" for="nombre">Nombres</label>
+<div class="col-md-4">
+<input id="nombre" name="nombre" type="text" placeholder="Nombre" class="form-control input-md">
+
+</div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+<label class="col-md-2 control-label" for="apellido">Apellidos</label>
+<div class="col-md-4">
+<input id="apellido" name="apellido" type="text" placeholder="Apellido" class="form-control input-md">
+
+</div>
+</div>
+
+
+<div class="form-group">
+<label class="col-md-2 control-label" for="telefono">Telefono</label>
+<div class="col-md-4">
+<input id="telefono" name="telefono" type="text" placeholder="telefono" class="form-control input-md">
+
+</div>
+</div>
+
+<div class="form-group">
+<label class="col-md-2 control-label" for="asunto">Tema del mensaje</label>
+<div class="col-md-4">
+<input id="asunto" name="asunto" type="text" placeholder="tema del mensaje" class="form-control input-md">
+
+</div>
+</div>
+
+<div class="form-group">
+<label class="col-md-2 control-label" for="mensaje">Escriba su mensaje</label>
+<div class="col-md-4">
+<textarea cols="40" rows="6" id="comentarios" name="comentarios" placeholder="Escriba su mensaje" class="form-control input-md">
+</textarea>
+</div>
+</div>
+
+
+
+
+<!-- Button -->
+<div class="form-group">
+<label class="col-md-2 control-label" for="botones"></label>
+<div class="col-md-2">
+  <button id="envio" name="envio" class="btn btn-success">Enviar correo</button>
+</div>
+<div class="col-md-2">
+  <button id="borrar" name="borrar" class="btn btn-success">Borrar todo</button>
+</div>
+</div>
+
+
+</fieldset>
+</form>
+  </div>
+		
+
+
+</article>
+<aside class="col-md-4">
+<label class="col-md-2" for="telefono"><h4>Informaciones</h4></label>
+<br>
+<br>
+<br>
+<br>
+
+<p>Contacto@constructorasec.cl
+</p>
+<br>
+<br>
+<p>
+63 2232323 / 63 2232323
+</p>
+<p>
++569 98765432
+</p>
+<br>
+<br>
+<p>
+Av. Vitacura 10.151, Vitacura, Santiago
+</p>
+
+</aside>
+
+</section>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
 </div>
 <br><br>
 <?php
