@@ -13,6 +13,6 @@ $stockMin	= $_POST['stockMin'];
 $tipodemat	= $_POST['id_tipo'];
 
  $resultado = $agregar->actualizarMateriales($id,$nombre,$proveedor,$caracteristica,$stock,$tipoCant,$preciocompra,$precioventa,$stockMin,$tipodemat);
-header("Location:/constructorasecinacap2018/view/mostrarmateriales.php");
+echo "<script>alert('Material editado!'); window.close();</script>";
 
 ?>
