@@ -1,16 +1,19 @@
 <?php
-
-if(!empty($_GET)){
-	
-	$conexion=new mysqli("localhost:3306", "root", "","newsec");
- $conexion->query("SET NAMES 'utf8'");
-			$sql = "DELETE FROM material WHERE id=".$_GET["id"];
-			$query = $conexion->query($sql);
-			if($query!=null){
-				header("Location:/constructorasecinacap2018/view/mostrarmateriales.php");
-			}else{
-				print "<script>alert(\"No se pudo eliminar.\");window.location='../ver.php';</script>";
-
-			}
+if(!empty($_GET))
+{
+	$valor=$_GET["id"];
+	require_once("../model/transacbd.php");
+	$datos=new transacciones_modelo();
+	$resultado = $datos->eliminarMateriales($valor);
+	if($resultado)
+	{
+		echo "<script>alert('Elemento se elimino correctamente'); location.href='../view/gestionmateriales.php';</script>";
+		//header("Location: ../view/gestionmateriales.php?exito=1");
+	}
+	else
+	{
+		echo "<script>alert('Hubo un error en eliminar'); location.href='../view/gestionmateriales.php';</script>";
+		//header("Location: ../view/gestionmateriales.php?error=1");
+	}
 }
 ?>
