@@ -8,12 +8,10 @@ if(!empty($_GET))
 	if($resultado)
 	{
 		echo "<script>alert('Elemento se elimino correctamente'); location.href='../view/gestionmateriales.php';</script>";
-		//header("Location: ../view/gestionmateriales.php?exito=1");
 	}
 	else
 	{
 		echo "<script>alert('Hubo un error en eliminar'); location.href='../view/gestionmateriales.php';</script>";
-		//header("Location: ../view/gestionmateriales.php?error=1");
 	}
 }
 ?>

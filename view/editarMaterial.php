@@ -53,15 +53,15 @@
       {
     ?>
    <tr>
-      <td><input class="form-control" readonly="readonly" id="id" name="id" type="text" value="<?php echo $dat["id"]?>"  ></td>
-      <td><input class="form-control" id="nombre" name="nombre" type="text" value="<?php echo $dat["nombre"]?>" maxlength="45"></td>
+      <td><input class="form-control" readonly="readonly" id="id" name="id" type="text" value="<?php echo $dat["id"]?>" required  ></td>
+      <td><input class="form-control" id="nombre" name="nombre" type="text" value="<?php echo $dat["nombre"]?>" maxlength="45" required></td>
       <td><input class="form-control" id="proveedor" name="proveedor" type="text" value="<?php echo $dat["proveedor"]?>" maxlength="45"></td>
-      <td><input class="form-control" id="caracteristica" name="caracteristica" type="text" value="<?php echo $dat["caracteristica"]?>" maxlength="45"></td>
-      <td><input class="form-control" id="stock" name="stock" type="text" value="<?php echo $dat["stock"]?>" maxlength="11" onkeypress="return controltag(event);"></td>
-      <td><input class="form-control" id="tipoCant" name="tipoCant" type="text" value="<?php echo $dat["tipodecantidad"]?>" maxlength="30"></td>
-      <td><input class="form-control" id="preciocompra" name="preciocompra" type="text" value="<?php echo $dat["preciocompra"]?>" maxlength="11" onkeypress="return controltag(event);"></td>
-      <td><input class="form-control" id="precioventa" name="precioventa" type="text" value="<?php echo $dat["precioventa"]?>" maxlength="11" onkeypress="return controltag(event);"></td>
-	    <td><input class="form-control" id="stockMin" name="stockMin" type="text" value="<?php echo $dat["stockminimo"]?>" maxlength="11" onkeypress="return controltag(event);"></td>
+      <td><input class="form-control" id="caracteristica" name="caracteristica" type="text" value="<?php echo $dat["caracteristica"]?>" maxlength="45" required></td>
+      <td><input class="form-control" id="stock" name="stock" type="text" value="<?php echo $dat["stock"]?>" maxlength="11" onkeypress="return controltag(event);" required></td>
+      <td><input class="form-control" id="tipoCant" name="tipoCant" type="text" value="<?php echo $dat["tipodecantidad"]?>" maxlength="30" required></td>
+      <td><input class="form-control" id="preciocompra" name="preciocompra" type="text" value="<?php echo $dat["preciocompra"]?>" maxlength="11" onkeypress="return controltag(event);" required></td>
+      <td><input class="form-control" id="precioventa" name="precioventa" type="text" value="<?php echo $dat["precioventa"]?>" maxlength="11" onkeypress="return controltag(event);" required></td>
+	    <td><input class="form-control" id="stockMin" name="stockMin" type="text" value="<?php echo $dat["stockminimo"]?>" maxlength="11" onkeypress="return controltag(event);" required></td>
  <td>
       <select class="form-control" style="width:150px;" id="id_tipo" name="id_tipo">
       <?php

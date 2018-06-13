@@ -49,15 +49,15 @@
     </tr>
   <form id="form"  role="form" method="post" action="../controller/agregarmaterial.php">
    <tr>
-      <td><input class="form-control" id="nombre" name="nombre" type="text" maxlength="45"></td>
-      <td><input class="form-control" id="proveedor" name="proveedor" type="text" maxlength="45"></td>
-      <td><input class="form-control" id="caracteristica" name="caracteristica" type="text" maxlength="45"></td>
-      <td><input class="form-control" id="stock" name="stock" type="text" maxlength="11" onkeypress="return controltag(event);"></td>
+      <td><input class="form-control" id="nombre" name="nombre" type="text" maxlength="45" required></td>
+      <td><input class="form-control" id="proveedor" name="proveedor" type="text" maxlength="45" required></td>
+      <td><input class="form-control" id="caracteristica" name="caracteristica" type="text" maxlength="45" required></td>
+      <td><input class="form-control" id="stock" name="stock" type="text" maxlength="11" onkeypress="return controltag(event);" required></td>
       <td><input class="form-control" id="tipoCant" name="tipoCant" type="text" maxlength="30"></td>
-      <td><input class="form-control" id="preciocompra" name="preciocompra" type="text" maxlength="11" onkeypress="return controltag(event);"></td>
-      <td><input class="form-control" id="precioventa" name="precioventa" type="text" maxlength="11" onkeypress="return controltag(event);"></td>
-	  <td><input class="form-control" id="stockMin" name="stockMin" type="text" maxlength="11" onkeypress="return controltag(event);"></td>
-    <td><input class="form-control" readonly="readonly" id="admin" name="admin" type="text" maxlength="11" onkeypress="return controltag(event);" value="1"></td>
+      <td><input class="form-control" id="preciocompra" name="preciocompra" type="text" maxlength="11" onkeypress="return controltag(event);" required></td>
+      <td><input class="form-control" id="precioventa" name="precioventa" type="text" maxlength="11" onkeypress="return controltag(event);" required></td>
+	  <td><input class="form-control" id="stockMin" name="stockMin" type="text" maxlength="11" onkeypress="return controltag(event);" required></td>
+    <td><input class="form-control" readonly="readonly" id="admin" name="admin" type="text" maxlength="11" onkeypress="return controltag(event);" value="1" required></td>
     <td>
 
       <select class="form-control" style="width:150px;" id="id_tipo" name="id_tipo">
