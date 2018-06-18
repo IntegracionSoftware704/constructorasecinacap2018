@@ -13,5 +13,6 @@ $admin	= $_POST['admin'];
 $tipoM	= $_POST['id_tipo'];
 
  $resultado = $agregar->agregarMateriales($nombre,$proveedor,$caracteristica,$stock,$tipoCant,$preciocompra,$precioventa,$stockMin,$admin,$tipoM);
-    header("Location:/constructorasecinacap2018/view/mostrarmateriales.php");
+    echo "<script>window.opener.location.href=window.opener.location.href;</script>";
+    echo "<script>alert('Material agregado!'); window.close();</script>";
 ?>
