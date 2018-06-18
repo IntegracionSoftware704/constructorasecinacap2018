@@ -26,7 +26,7 @@ Contacto
 <div style="background-color: #c0fabe;">
   <div class="container">
     <div class="row">
-      <form class="form-horizontal" method="post" action="../controller/envioCorreo.php">
+      <form class="form-horizontal" method="post" action="../controller/contacto.php">
         <fieldset>
 		<label class="col-md-8" for="titulo"><h4>Formulario de Contacto</h4></label>
 		<br>
@@ -35,55 +35,49 @@ Contacto
 		<br>
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-2 control-label" for="email">Correo electronico</label>
+  <label class="col-md-2 control-label" for="name">Nombre</label>
   <div class="col-md-4">
-    <input id="email" name="email" type="text" placeholder="Correo" class="form-control input-md">
+    <input id="name" name="name" type="text" placeholder="nombre..." class="form-control input-md">
 
   </div>
 </div>
 
 <!-- Text input-->
 <div class="form-group">
-<label class="col-md-2 control-label" for="nombre">Nombres</label>
+<label class="col-md-2 control-label" for="asunto">Asunto</label>
 <div class="col-md-4">
-<input id="nombre" name="nombre" type="text" placeholder="Nombre" class="form-control input-md">
+<input id="subject" name="subject" type="text" placeholder="asunto..." class="form-control input-md">
 
 </div>
 </div>
 
 <!-- Text input-->
 <div class="form-group">
-<label class="col-md-2 control-label" for="apellido">Apellidos</label>
+<label class="col-md-2 control-label" for="email">Correo</label>
 <div class="col-md-4">
-<input id="apellido" name="apellido" type="text" placeholder="Apellido" class="form-control input-md">
+<input id="email" name="email" type="email" placeholder="Correo..." class="form-control input-md">
 
 </div>
 </div>
 
 
 <div class="form-group">
-<label class="col-md-2 control-label" for="telefono">Telefono</label>
+<label class="col-md-2 control-label" for="message">Escriba su mensaje</label>
 <div class="col-md-4">
-<input id="telefono" name="telefono" type="text" placeholder="telefono" class="form-control input-md">
-
-</div>
-</div>
-
-<div class="form-group">
-<label class="col-md-2 control-label" for="asunto">Tema del mensaje</label>
-<div class="col-md-4">
-<input id="asunto" name="asunto" type="text" placeholder="tema del mensaje" class="form-control input-md">
-
-</div>
-</div>
-
-<div class="form-group">
-<label class="col-md-2 control-label" for="mensaje">Escriba su mensaje</label>
-<div class="col-md-4">
-<textarea cols="40" rows="6" id="comentarios" name="comentarios" placeholder="Escriba su mensaje" class="form-control input-md">
+<textarea cols="40" rows="6" id="message" name="message" placeholder="Escriba su mensaje..." class="form-control input-md">
 </textarea>
 </div>
 </div>
+
+
+<div class="form-group">
+<label class="col-md-2 control-label" for="file">Archivo adjunto</label>
+<div class="col-md-4">
+<input id="file" name="file" type="file" placeholder="Archivo adjunto" class="form-control input-md">
+
+</div>
+</div>
+
 
 
 
