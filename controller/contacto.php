@@ -1,12 +1,13 @@
+
 <?php
 
 include "class.phpmailer.php";
 include "class.smtp.php";
 
-$email_user = "aestebanveraz@gmail.com";
-$email_password = "36866667";
+$email_user = "constructorasec704@gmail.com";
+$email_password = "DaniloDiegoAldo";
 
-$address_to = "aestebanveraz@gmail.com";
+$address_to = "constructorasec704@gmail.com";
 $from_name = "Aldo";
 
 if (isset($_POST['submit'])) {
@@ -45,12 +46,10 @@ $phpmailer->Send();
 }
 ?>
 <?php
-    
+
     
     if("../controller/contacto.php")
     {
         header("Location: ../view/contacto.php");
-        
-        
     }
 ?>
