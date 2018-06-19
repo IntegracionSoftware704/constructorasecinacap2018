@@ -20,18 +20,46 @@
     <script src="../js/menu.js"></script>
     <script src="../js/carousel.js"></script>
     <script src="../js/login.js"></script>
+    <script src="../js/solonumeros.js"></script>
 </head>
 <body>
   <header>
     <div class="container-fluid">
         <h1>Constructora SEC</h1>
-        <h5 style="color:#fff;"><strong>Agregar/Editar planilla</strong></h5>
+        <h5 style="color:#fff;"><strong>Agregar planilla</strong></h5>
     </div>
 </header>
 <div class="container-fluid">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed massa vestibulum, sollicitudin augue vel, finibus mi. Nullam malesuada hendrerit lectus, malesuada laoreet justo efficitur egestas. Morbi arcu massa, venenatis non felis posuere, imperdiet lobortis justo. Curabitur lacus massa, dapibus quis commodo vitae, ullamcorper et nisi. Aliquam in felis sodales, fermentum lacus sit amet, gravida ipsum. Nunc tempor consectetur tortor. Suspendisse semper non dui sed auctor. Pellentesque nec euismod dui, quis hendrerit enim. Nullam dolor velit, placerat eleifend magna et, pretium mattis ex.
+  <div class="row">
+<table class="table table-condensed">
+  <tbody>
+    <tr>
+    <th scope="col">ID planilla</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Foto</th>
+      <th scope="col">Valor referencial</th>
+      <th scope="col"></th>
 
- Aliquam rhoncus lectus in interdum commodo. Pellentesque dignissim libero eu lorem tincidunt, vel faucibus nibh dignissim. Aliquam lacinia sollicitudin pulvinar. Aenean velit arcu, finibus at elit in, mollis suscipit leo. Duis a urna vel tellus fermentum placerat. Phasellus sagittis quam pretium, malesuada velit vitae, consectetur est. In ligula ipsum, consequat non velit in, tempus mollis libero.</p>
+    </tr>
+  <form id="form"  role="form" method="post" action="../controller/agregarmaterial.php">
+   <tr>
+      
+      <td><input class="form-control" id="nombre" readonly name="nombre" type="text" maxlength="45" required></td>
+      <td><input class="form-control" id="foto" name="foto" type="text" maxlength="45" required></td>
+      <td><input class="form-control" id="cosotreferencial" name="cosotreferencial" type="text" maxlength="45" required></td>
+      
+    <td><input class="form-control"  id="admin" name="admin" type="text" maxlength="11" onkeypress="return controltag(event);" value="" required></td>
+    <td>
+
+      
+ </td>
+      <td class="text-center"> <button type="submit" id="reg" name="reg" class="btn btn-info btn-xs">Agregar</button></td>
+    </tr>
+    </form>
+
+  </tbody>
+</table>
+</div>
 </div>
 </body>
 </html>

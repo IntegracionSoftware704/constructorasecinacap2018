@@ -5,75 +5,7 @@ require_once("header.php");
 <br>
 <br>
 
-<div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 hidden-xs">
-                <ul>
 
-                    <li>
-                        <a href="/nuestros-proyectos/">
-                            nuestros proyectos
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="/como-comprar/">
-                            cómo comprar
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="/todoesdiseno/">
-                            Todo es Diseño
-                        </a>
-                    </li>
-
-                </ul>
-                <ul class="lite">
-
-                    <li>
-                        <a href="/">
-                            inicio
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="/oportunidades2017">
-                            Oportunidades 2018
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="/preguntas-frecuentes">
-                            preguntas frecuentes
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="/noticias">
-                            noticias
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="/posventa">
-                            Posventa
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="/trabaja-con-nosotros">
-                            Trabaja con Nosotros
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="/contacto">
-                            contacto
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 hidden-xs">
 
 
@@ -158,31 +90,6 @@ con renta mensual desde $3.000.000 en adelante.<br/>(2) Tasa de interés para cl
             </div>
         </div>
 
-        <div class="container">
-        <h3>
-            BANCOS QUE FORMAN PARTE DEL CONVENIO
-        </h3>
-        <div class="slide-bancos owl-carousel owl-theme" style="opacity: 1; display: block;">
-
-            <div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 4560px; left: 0px; display: block; transform: translate3d(0px, 0px, 0px);"><div class="owl-item" style="width: 228px;"><div class="contenedor-banco">
-                <img src="../img/1.width-140.jpg" width="96" height="48" alt="Bci">
-            </div></div><div class="owl-item" style="width: 228px;"><div class="contenedor-banco">
-                <img src="../img/3.width-140.jpg" width="136" height="48" alt="Banco Falabella">
-            </div></div><div class="owl-item" style="width: 228px;"><div class="contenedor-banco">
-                <img src="../img/4.width-140.jpg" width="140" height="26" alt="Banco Estado">
-
-
-
-
-
-
-
-
-
-
-
-
-        <div class="owl-controls"><div class="owl-buttons"><div class="owl-prev fa fa-angle-left fa-5"></div><div class="owl-next fa fa-angle-right fa-5"></div></div></div></div>
     </div>
 </div>
 

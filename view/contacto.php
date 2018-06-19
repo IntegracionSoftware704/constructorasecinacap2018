@@ -5,6 +5,8 @@
 
 
 
+
+
 <div class="row">
 <br>
 <div class="Titulo">
@@ -36,7 +38,8 @@ Contacto
       <input class="form-control" name="email" type="email" placeholder="Email..."><br>
       <textarea placeholder="Message..." class="form-control" name="message"></textarea><br>
       <input class="form-control" type="file" name="attachment"><br>
-      <input class="btn btn-primary" name="submit" type="submit" value="Send Email">
+      <input class="" name="submit" type="submit" value="Send Email">
+      
     </form>
   </div>
 </div>
