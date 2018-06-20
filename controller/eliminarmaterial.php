@@ -7,11 +7,8 @@ if(!empty($_GET))
 	$resultado = $datos->eliminarMateriales($valor);
 	if($resultado)
 	{
-		echo "<script>alert('Elemento se elimino correctamente'); location.href='../view/gestionmateriales.php';</script>";
-	}
-	else
-	{
-		echo "<script>alert('Hubo un error en eliminar'); location.href='../view/gestionmateriales.php';</script>";
+			echo "<script>window.opener.document.location='../view/gestionmateriales.php?exelim=1';</script>";
+			echo "<script>window.close();</script>";
 	}
 }
 ?>

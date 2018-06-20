@@ -13,7 +13,6 @@ $stockMin	= $_POST['stockMin'];
 $tipodemat	= $_POST['id_tipo'];
 
  $resultado = $agregar->actualizarMateriales($id,$nombre,$proveedor,$caracteristica,$stock,$tipoCant,$preciocompra,$precioventa,$stockMin,$tipodemat);
-echo "<script>window.opener.location.href=window.opener.location.href;</script>";
-echo "<script>alert('Material editado!'); window.close();</script>";
-
+ echo "<script>window.opener.document.location='../view/gestionmateriales.php?exedit=1';</script>";
+ echo "<script>window.close();</script>";
 ?>

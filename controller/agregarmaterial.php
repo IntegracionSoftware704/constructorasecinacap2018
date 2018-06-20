@@ -13,6 +13,6 @@ $admin	= $_POST['admin'];
 $tipoM	= $_POST['id_tipo'];
 
  $resultado = $agregar->agregarMateriales($nombre,$proveedor,$caracteristica,$stock,$tipoCant,$preciocompra,$precioventa,$stockMin,$admin,$tipoM);
-    echo "<script>window.opener.location.href=window.opener.location.href;</script>";
-    echo "<script>alert('Material agregado!'); window.close();</script>";
+ echo "<script>window.opener.document.location='../view/gestionmateriales.php?exagre=1';</script>";
+ echo "<script>window.close();</script>";
 ?>

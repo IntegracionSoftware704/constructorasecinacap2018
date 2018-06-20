@@ -24,7 +24,7 @@
     <li><a href="panelcontrol.php">Inicio</a></li>
     <li><a href="gestionplanilla.php">Gestion planillas</a></li>
     <li><a href="gestionmateriales.php">Gestion Materiales</a>
-    
+
     </li>
 </ul>
 <ul class="nav navbar-nav navbar-right">
@@ -37,10 +37,10 @@
 
 <div class="container">
 <h2>Gestion Planillas</h2>
-  
+
     <section class="main row">
         <article class="col-md-9">
-            
+
         <div class="col-md-3" style="background:#46d140;">
         <a href="http://localhost/constructorasecinacap2018/view/gestionplanilla.php?id=1"><img src="../img/plani1.jpg" class="img-thumbnail" alt="Cinque Terre" width="300"></a>
         <h5>Planilla 1</h5>
@@ -54,7 +54,7 @@
                     <button type="button" class="btn btn-success">
                         Volver</button>
                         </a>
-            
+
         </aside>
 
     </section>
@@ -282,7 +282,7 @@
       </div>
       <div class=" gestion row">
       <div class="col-md-9">
-      
+
       </div>
       <div class="col-md-3">
       <label for="male">Costo:</label>
@@ -292,15 +292,15 @@
 
       <div class="botones row">
       <div class="col-md-6">
-      
+
       </div>
       <div class="col-md-4">
       <button type="button" class="btn btn-success">Actualizar</button>
-      
+
       </div>
       <div class="col-md-2">
       <button type="button" class="btn btn-success">Eliminar</button>
-      
+
       </div>
 
       </div>
