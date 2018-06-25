@@ -128,5 +128,44 @@
               return -1;
             }
         }
+        public function agregarplanilla($id,$nombre_img,$tipo,$tamano,$nombre,$costo)
+        {
+            $valid = true;
+            $sql = "select id from plantilla";
+            $consulta=$this->db->query($sql);
+
+            while($filas=$consulta->fetch_assoc())
+            {
+                if($valid)
+                {
+                  $mayor = $filas["id"];
+                  $valid = false;
+                }
+                else
+                {
+                  if($mayor < $filas["id"])
+                  {
+                    $mayor = $filas["id"];
+                  }
+                }
+            }
+            $sql = "insert into plantilla (id,foto,nombreplantilla,costototal) values(". ($mayor + 1) .",'". $nombre_img ."','". $nombre ."','". $costo ."')";
+            if($this->db->query($sql) === true)
+            {
+              return 0;
+            }
+            else
+            {
+              return -1;
+            }
+        }
+        public function consultarPlanilla()
+        {
+             $sql= ("select plantilla.id as id,plantilla.foto as foto,plantilla.nombreplantilla as nombreplantilla,plantilla.costototal as costototal from plantilla");
+
+            $consulta=$this->db->query($sql);
+
+           return $consulta;
+        }
     }
 ?>

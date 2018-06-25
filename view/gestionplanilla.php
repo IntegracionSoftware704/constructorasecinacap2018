@@ -27,7 +27,7 @@
     </li>
 </ul>
 <ul class="nav navbar-nav navbar-right">
-<li><a href="javascript:window.open('agregarplanillas.php','','top=50,left=100,width=700,height=500');void 0">Agregar Planilla</a></li>
+
 </ul>
 </div><!-- /.nav-collapse -->
 </nav>
@@ -36,24 +36,26 @@
 
 <div class="container">
   <div class="">
-  <h4>GESTION DE PLANTILLAS</h4>
+  <h4>GESTION DE PLANILLAS</h4>
   <table class="table table-striped custab">
 
     <tbody>
       <tr>
         <th scope="col">ID</th>
-        <th scope="col">Nombre</th>
         <th scope="col">Foto</th>
+        <th scope="col">Nombre</th>
         <th scope="col">Costo referencial</th>
         <th scope="col">Estado</th>
-        <th scope="col"></th>
+        <th scope="col"> <button type="submit" id="reg" name="reg" class="btn btn-success"><a style="color:#fff;" href="javascript:window.open('agregarplanillas.php','','top=50,left=100,width=700,height=500');void 0">Agregar Planilla</a></button></th>
 
       </tr>
+
       <?php
-           require_once("../controller/consultarmateriales.php");
+           require_once("../controller/consultarplanilla.php");
 
   	  while($dat=$filas->fetch_assoc())
   	  {
+        
   		  ?>
       <tr>
         <script>
@@ -71,17 +73,17 @@
         }
         </script>
         <td><?php echo $dat["id"]?></td>
-        <td><?php echo $dat["nombre"]?></td>
-        <td><?php echo $dat["foto"]?></td>
-        <td><?php echo $dat["costoreferencial"]?></td>
-        <td><?php echo $dat["estado"]?></td>
+        <td><img src="/constructorasecinacap2018/uploads/<?php echo $dat["foto"]?>" alt="Imagen del primer artículo" width="25%"></td>
+        <td><?php echo $dat["nombreplantilla"]?></td>
+        <td><?php echo $dat["costototal"]?></td>
         
-      <td class="text-center"><a class='btn btn-info btn-xs' href="javascript:window.open('editarplanilla.php?id=<?php echo $dat["id"];?>','','top=50,left=100,width=700,height=500');void 0"><span class="glyphicon glyphicon-edit"></span>Editar</a> <a href="javascript:confirmEliminar()" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span>Eliminar</a></td>
+      <td class="text-center"><a class='btn btn-info btn-xs' href="javascript:window.open('editarmaterial.php?id=<?php echo $dat["id"];?>','','top=50,left=100,width=700,height=500');void 0"><span class="glyphicon glyphicon-edit"></span>Editar</a> <a href="javascript:confirmEliminar()" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span>Eliminar</a></td>
       </tr>
 
        <?php
   	  }
   	  ?>
+      
 
     </tbody>
   </table>

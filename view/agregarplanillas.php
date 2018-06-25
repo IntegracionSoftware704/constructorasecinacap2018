@@ -35,20 +35,21 @@
   <tbody>
     <tr>
     <th scope="col">ID planilla</th>
-      <th scope="col">Nombre</th>
       <th scope="col">Foto</th>
+      <th scope="col">Nombre</th>
       <th scope="col">Valor referencial</th>
       <th scope="col"></th>
 
     </tr>
-  <form id="form"  role="form" method="post" action="../controller/agregarmaterial.php">
+  <form id="form"  role="form" method="post" action="../controller/agregarplanilla.php" enctype="multipart/form-data">
    <tr>
       
-      <td><input class="form-control" id="nombre" readonly name="nombre" type="text" maxlength="45" required></td>
-      <td><input class="form-control" id="foto" name="foto" type="text" maxlength="45" required></td>
-      <td><input class="form-control" id="cosotreferencial" name="cosotreferencial" type="text" maxlength="45" required></td>
+      <td><input class="form-control" id="id"  name="id" type="text" maxlength="45" required></td>
+      <td><input class="form-control" id="imagen" name="imagen" type="file" maxlength="45" required></td>
       
-    <td><input class="form-control"  id="admin" name="admin" type="text" maxlength="11" onkeypress="return controltag(event);" value="" required></td>
+      <td><input class="form-control" id="nombre" name="nombre" type="text" maxlength="45" required></td>
+      
+    <td><input class="form-control" id="cosotreferencial" name="cosotreferencial" type="text" maxlength="45" required></td>
     <td>
 
       
