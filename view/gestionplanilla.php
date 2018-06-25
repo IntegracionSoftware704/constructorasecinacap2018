@@ -5,6 +5,20 @@
     {
         header("Location: ../index.php");
     }
+    if(isset($_GET["exagre"]))
+    {
+        if($_GET["exagre"] == 1)
+        {
+            ?>
+            <script>
+           $(document).ready(function()
+           {
+              $("#mostrarmodal").modal("show");
+           });
+           </script>
+            <?php
+        }
+    }
 ?>
 <div class="menu-fila">
     <div class="container">
@@ -46,7 +60,7 @@
         <th scope="col">Nombre</th>
         <th scope="col">Costo referencial</th>
         <th scope="col">Estado</th>
-        <th scope="col"> <button type="submit" id="reg" name="reg" class="btn btn-success"><a style="color:#fff;" href="javascript:window.open('agregarplanillas.php','','top=50,left=100,width=700,height=500');void 0">Agregar Planilla</a></button></th>
+        <th scope="col"> <button type="submit" id="reg" name="reg" class="btn btn-success" style="color:#fff;" onclick="javascript:window.open('agregarplanillas.php','','top=50,left=100,width=700,height=500');void 0">Agregar Planilla</button></th>
 
       </tr>
 
@@ -55,7 +69,7 @@
 
   	  while($dat=$filas->fetch_assoc())
   	  {
-        
+
   		  ?>
       <tr>
         <script>
@@ -72,21 +86,37 @@
             }
         }
         </script>
-        <td><?php echo $dat["id"]?></td>
-        <td><img src="/constructorasecinacap2018/uploads/<?php echo $dat["foto"]?>" alt="Imagen del primer artículo" width="25%"></td>
-        <td><?php echo $dat["nombreplantilla"]?></td>
-        <td><?php echo $dat["costototal"]?></td>
-        
-      <td class="text-center"><a class='btn btn-info btn-xs' href="javascript:window.open('editarmaterial.php?id=<?php echo $dat["id"];?>','','top=50,left=100,width=700,height=500');void 0"><span class="glyphicon glyphicon-edit"></span>Editar</a> <a href="javascript:confirmEliminar()" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span>Eliminar</a></td>
+        <td style="vertical-align: middle;"><?php echo $dat["id"]?></td>
+        <td class="align-middle"><img src="/constructorasecinacap2018/uploads/<?php echo $dat["foto"]?>" alt="Imagen del primer artículo" width="25%"></td>
+        <td style="vertical-align: middle;"><?php echo $dat["nombreplantilla"]?></td>
+        <td style="vertical-align: middle;"><?php echo $dat["costototal"]?></td>
+
+      <td style="vertical-align: middle;" class="text-center"><a class='btn btn-info btn-xs' href="javascript:window.open('editarmaterial.php?id=<?php echo $dat["id"];?>','','top=50,left=100,width=700,height=500');void 0"><span class="glyphicon glyphicon-edit"></span>Editar</a> <a href="javascript:confirmEliminar()" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span>Eliminar</a></td>
       </tr>
 
        <?php
   	  }
   	  ?>
-      
+
 
     </tbody>
   </table>
+  <div class="modal fade" id="mostrarmodal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+       <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 style="color:black">Confirmacion agregar</h4>
+   </div>
+       <div class="modal-body">
+          Se agrego el elemento correctamente!
+   </div>
+       <div class="modal-footer">
+      <a href="#" data-dismiss="modal" class="btn btn-success">Cerrar</a>
+   </div>
+    </div>
+  </div>
+  </div>
   	</div>
 </div>
 <?php

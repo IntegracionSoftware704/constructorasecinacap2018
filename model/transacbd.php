@@ -99,28 +99,9 @@ nombre,proveedor,caracteristica,stock,tipodecantidad,preciocompra,precioventa,st
               return -1;
             }
         }
-        public function agregarplanilla($id,$nombre_img,$tipo,$tamano,$nombre,$costo)
+        public function agregarplanilla($nombre_img,$tipo,$tamano,$nombre,$costo)
         {
-            $valid = true;
-            $sql = "select id from plantilla";
-            $consulta=$this->db->query($sql);
-
-            while($filas=$consulta->fetch_assoc())
-            {
-                if($valid)
-                {
-                  $mayor = $filas["id"];
-                  $valid = false;
-                }
-                else
-                {
-                  if($mayor < $filas["id"])
-                  {
-                    $mayor = $filas["id"];
-                  }
-                }
-            }
-            $sql = "insert into plantilla (id,foto,nombreplantilla,costototal) values(". ($mayor + 1) .",'". $nombre_img ."','". $nombre ."','". $costo ."')";
+            $sql = "insert into plantilla (foto,nombreplantilla,costototal) values('". $nombre_img ."','". $nombre ."','". $costo ."')";
             if($this->db->query($sql) === true)
             {
               return 0;

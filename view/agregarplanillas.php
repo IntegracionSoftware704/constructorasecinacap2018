@@ -34,7 +34,6 @@
 <table class="table table-condensed">
   <tbody>
     <tr>
-    <th scope="col">ID planilla</th>
       <th scope="col">Foto</th>
       <th scope="col">Nombre</th>
       <th scope="col">Valor referencial</th>
@@ -43,16 +42,15 @@
     </tr>
   <form id="form"  role="form" method="post" action="../controller/agregarplanilla.php" enctype="multipart/form-data">
    <tr>
-      
-      <td><input class="form-control" id="id"  name="id" type="text" maxlength="45" required></td>
-      <td><input class="form-control" id="imagen" name="imagen" type="file" maxlength="45" required></td>
-      
+
+      <td><input class="form-control-file" id="imagen" name="imagen" type="file" maxlength="45" required></td>
+
       <td><input class="form-control" id="nombre" name="nombre" type="text" maxlength="45" required></td>
-      
+
     <td><input class="form-control" id="cosotreferencial" name="cosotreferencial" type="text" maxlength="45" required></td>
     <td>
 
-      
+
  </td>
       <td class="text-center"> <button type="submit" id="reg" name="reg" class="btn btn-info btn-xs">Agregar</button></td>
     </tr>
