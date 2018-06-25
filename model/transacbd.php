@@ -43,26 +43,8 @@
   		}
         public function agregarMateriales($nombre,$proveedor,$caracteristica,$stock,$tipoCant,$preciocompra,$precioventa,$stockMin,$admin,$tipoM)
         {
-            $valid = true;
-            $sql = "select id from material";
-            $consulta=$this->db->query($sql);
-
-            while($filas=$consulta->fetch_assoc())
-            {
-                if($valid)
-                {
-                  $mayor = $filas["id"];
-                  $valid = false;
-                }
-                else
-                {
-                  if($mayor < $filas["id"])
-                  {
-                    $mayor = $filas["id"];
-                  }
-                }
-            }
-            $sql = "insert into material values(". ($mayor + 1) .",'". $nombre ."','". $proveedor ."','". $caracteristica ."',". $stock .",'". $tipoCant ."',". $preciocompra .",". $precioventa .",". $stockMin .",". $admin .",". $tipoM .")";
+            $sql = "insert into material (
+nombre,proveedor,caracteristica,stock,tipodecantidad,preciocompra,precioventa,stockminimo,Administrador_id,Tipodematerial_id) values('". $nombre ."','". $proveedor ."','". $caracteristica ."',". $stock .",'". $tipoCant ."',". $preciocompra .",". $precioventa .",". $stockMin .",". $admin .",". $tipoM .")";
             if($this->db->query($sql) === true)
             {
               return 0;
@@ -101,24 +83,13 @@
         public function agregarUsuario($email,$nombres,$appa,$pass,$tel)
         {
             $valid = true;
-            $sql = "select id from cliente";
+            $sql = "select * from cliente where correoelectronico='". $email ."'";
             $consulta=$this->db->query($sql);
             while($filas=$consulta->fetch_assoc())
             {
-                if($valid)
-                {
-                  $mayor = $filas["id"];
-                  $valid = false;
-                }
-                else
-                {
-                  if($mayor < $filas["id"])
-                  {
-                    $mayor = $filas["id"];
-                  }
-                }
+                return -2; // existe correo
             }
-            $sql = "insert into cliente values(". ($mayor + 1) .",'". $nombres ."','". $appa ."','". $email ."','". $pass ."',". $tel .")";
+            $sql = "insert into cliente (nombre,apellidopaterno,correoelectronico,contrasena,telefono) values('". $nombres ."','". $appa ."','". $email ."','". $pass ."',". $tel .")";
             if($this->db->query($sql) === true)
             {
               return 0;

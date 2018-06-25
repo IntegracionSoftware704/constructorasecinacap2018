@@ -5,6 +5,48 @@
     {
         header("Location: ../index.php");
     }
+    if(isset($_GET["exelim"]))
+    {
+        if($_GET["exelim"] == 1)
+        {
+            ?>
+            <script>
+           $(document).ready(function()
+           {
+              $("#mostrarmodal").modal("show");
+           });
+           </script>
+            <?php
+        }
+    }
+    if(isset($_GET["exedit"]))
+    {
+        if($_GET["exedit"] == 1)
+        {
+            ?>
+            <script>
+           $(document).ready(function()
+           {
+              $("#mostrarmodal2").modal("show");
+           });
+           </script>
+            <?php
+        }
+    }
+    if(isset($_GET["exagre"]))
+    {
+        if($_GET["exagre"] == 1)
+        {
+            ?>
+            <script>
+           $(document).ready(function()
+           {
+              $("#mostrarmodal3").modal("show");
+           });
+           </script>
+            <?php
+        }
+    }
 ?>
 <div class="menu-fila">
     <div class="container">
@@ -27,7 +69,7 @@
     </li>
 </ul>
 <ul class="nav navbar-nav navbar-right">
-<li><a href="javascript:window.open('agregarmaterial.php','','top=50,left=100,width=700,height=500');void 0">Agregar Materiales</a></li>
+<li><a href="javascript:window.open('agregarmaterial.php','','top=50,left=100,width=900,height=500');void 0">Agregar Materiales</a></li>
 </ul>
 </div><!-- /.nav-collapse -->
 </nav>
@@ -56,25 +98,10 @@
       </tr>
       <?php
            require_once("../controller/consultarmateriales.php");
-
   	  while($dat=$filas->fetch_assoc())
   	  {
   		  ?>
       <tr>
-        <script>
-        function confirmEliminar() {
-            var txt;
-            var r = confirm("¿Eliminar elemento seleccionado?");
-            if (r == true)
-            {
-                window.location.href = '../controller/eliminarmaterial.php?id=<?php echo $dat["id"];?>';
-            }
-            else
-            {
-
-            }
-        }
-        </script>
         <td><?php echo $dat["id"]?></td>
         <td><?php echo $dat["nombre"]?></td>
         <td><?php echo $dat["proveedor"]?></td>
@@ -85,16 +112,64 @@
         <td><?php echo $dat["precioventa"]?></td>
   	  <td><?php echo $dat["stockminimo"]?></td>
       <td><?php echo $dat["nombrematerial"]?></td>
-      <td class="text-center"><a class='btn btn-info btn-xs' href="javascript:window.open('editarmaterial.php?id=<?php echo $dat["id"];?>','','top=50,left=100,width=700,height=500');void 0"><span class="glyphicon glyphicon-edit"></span>Editar</a> <a href="javascript:confirmEliminar()" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span>Eliminar</a></td>
+      <td class="text-center"><button type="button" class="btn btn-info btn-xs" data-toggle="modal" onclick="javascript:window.open('editarmaterial.php?id=<?php echo $dat["id"];?>','','top=50,left=100,width=900,height=500');void 0" data-target="">Editar</button> <button type="button" class="btn btn-danger btn-xs" onclick="javascript:window.open('confirmEliminar.php?id=<?php echo $dat["id"];?>','','top=50,left=250,width=400,height=220');void 0">Eliminar</button></td>
       </tr>
-
        <?php
   	  }
   	  ?>
-
     </tbody>
   </table>
   	</div>
+    <div class="modal fade" id="mostrarmodal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+   <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+         <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 style="color:black">Confirmacion eliminar</h4>
+     </div>
+         <div class="modal-body">
+            Se elimino el elemento correctamente!
+     </div>
+         <div class="modal-footer">
+        <a href="#" data-dismiss="modal" class="btn btn-success">Cerrar</a>
+     </div>
+      </div>
+   </div>
+</div>
+<!------------------------------------>
+<div class="modal fade" id="mostrarmodal2" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+<div class="modal-dialog modal-sm">
+  <div class="modal-content">
+     <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 style="color:black">Confirmacion editar</h4>
+ </div>
+     <div class="modal-body">
+        Se edito el elemento correctamente!
+ </div>
+     <div class="modal-footer">
+    <a href="#" data-dismiss="modal" class="btn btn-success">Cerrar</a>
+ </div>
+  </div>
+</div>
+</div>
+<!------------------------------------>
+<div class="modal fade" id="mostrarmodal3" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+<div class="modal-dialog modal-sm">
+  <div class="modal-content">
+     <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 style="color:black">Confirmacion agregar</h4>
+ </div>
+     <div class="modal-body">
+        Se agrego el elemento correctamente!
+ </div>
+     <div class="modal-footer">
+    <a href="#" data-dismiss="modal" class="btn btn-success">Cerrar</a>
+ </div>
+  </div>
+</div>
+</div>
 </div>
 <?php
     require_once("footer.php");

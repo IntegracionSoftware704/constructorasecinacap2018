@@ -12,7 +12,15 @@
     if(strcmp($password,$verif_pass) === 0)
     {
       $resultado = $agregar->agregarUsuario($correo,$nombres,$ap_paterno,$password,$telefono);
-      header("Location: ../view/login.php?registro=1");
+      if($resultado == -2)
+      {
+        header("Location: ../view/registro.php?error=3"); // correo existe
+      }
+      else
+      {
+        header("Location: ../view/login.php?registro=1");
+      }
+
     }
     else
     {

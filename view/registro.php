@@ -58,13 +58,34 @@
     if($_GET['error'] == 1)
     {
       ?>
-      <script>alert("Contraseñas no coinciden");</script>
+      <script>
+     $(document).ready(function()
+     {
+        $("#mostrarmodal").modal("show");
+     });
+     </script>
       <?php
     }
     if($_GET['error'] == 2)
     {
       ?>
-      <script>alert("Formato de correo incorrecto");</script>
+      <script>
+     $(document).ready(function()
+     {
+        $("#mostrarmodal2").modal("show");
+     });
+     </script>
+      <?php
+    }
+    if($_GET['error'] == 3)
+    {
+      ?>
+      <script>
+     $(document).ready(function()
+     {
+        $("#mostrarmodal3").modal("show");
+     });
+     </script>
       <?php
     }
   }
@@ -90,6 +111,54 @@
 
 </fieldset>
 </form>
+<div class="modal fade" id="mostrarmodal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+<div class="modal-dialog modal-sm">
+  <div class="modal-content">
+     <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 style="color:black">Registro usuario</h4>
+ </div>
+     <div class="modal-body">
+        Las contraseñas no coinciden, verifique
+ </div>
+     <div class="modal-footer">
+    <a href="#" data-dismiss="modal" class="btn btn-success">Cerrar</a>
+ </div>
+  </div>
+</div>
+</div>
+<div class="modal fade" id="mostrarmodal2" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+<div class="modal-dialog modal-sm">
+  <div class="modal-content">
+     <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 style="color:black">Registro usuario</h4>
+ </div>
+     <div class="modal-body">
+        Formato de correo electronico incorrecto, vuelve a intentarlo
+ </div>
+     <div class="modal-footer">
+    <a href="#" data-dismiss="modal" class="btn btn-success">Cerrar</a>
+ </div>
+  </div>
+</div>
+</div>
+<div class="modal fade" id="mostrarmodal3" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+<div class="modal-dialog modal-sm">
+  <div class="modal-content">
+     <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 style="color:black">Registro usuario</h4>
+ </div>
+     <div class="modal-body">
+        Correo electronico ya existe!, recuperar constraseña???
+ </div>
+     <div class="modal-footer">
+    <a href="#" data-dismiss="modal" class="btn btn-success">Cerrar</a>
+ </div>
+  </div>
+</div>
+</div>
   </div>
 <?php
     require_once("footer.php");
