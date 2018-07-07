@@ -1,4 +1,9 @@
 <?php
+/**
+ * @author Danilo Martinez
+ * Muestra mensaje para confirmacion de eliminar material
+ * Uso de Framework CSS Bootstrap 3
+ */
 if(!empty($_GET))
 {
 	$valor=$_GET["id"];

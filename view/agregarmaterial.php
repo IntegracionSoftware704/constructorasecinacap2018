@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+<!--Posibilita el ingreso de materiales con sus respectivos detalles-->
 <html lang="">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contructora SEC</title>
+    <title>Agregar material - Contructora SEC</title>
     <link rel=stylesheet href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../css/menu.css">
@@ -62,6 +63,12 @@
 
       <select class="form-control" style="width:150px;" id="id_tipo" name="id_tipo">
       <?php
+        /**
+         * @author Danilo Martinez
+         * @author Diego Valenzuela
+         * Ejecuta el controlador consultartipodematerial para mediante un ciclo
+         * devolver los datos del material
+         */
          require_once("../controller/consultartipodematerial.php");
 
     while($dat=$filas->fetch_assoc())

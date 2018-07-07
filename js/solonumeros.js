@@ -1,3 +1,7 @@
+/**
+ * Elemento para lograr el ingreso de solo numeros en textbox determinados
+ * @param {patron.test(te)} e 
+ */
 function controltag(e)
 {
 

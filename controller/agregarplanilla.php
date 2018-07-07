@@ -1,4 +1,24 @@
 <?php
+/**
+  * @author Danilo Martinez
+  * @author Diego Valenzuela
+  * @author Aldo Vera
+  * 
+  * Controlador con las transacciones entre la BD mysql-constructora y la vista
+  * Proyecto para asignatura Taller integracion de software INACAP Valdivia
+  * Carrera: Ingenieria en Informatica
+  * Profesor: Mario Alejandro Navarrete Vergara
+  * Julio 2018
+  * @link http://portales.inacap.cl/
+  * 
+  * @package controller
+  * 
+  * Inserta una nueva planilla a la tabla planilla
+  * Al agregar una planilla, la imagen insertada se mueve a la ruta ../uploads
+  * Al agregar la imagen a la nueva ruta, se inserta el nombre de la imagen a la tabla planilla
+  * Al insertar la planilla, se envia un mensaje de exito a la pagina gestionplanilla.php
+  * Envia como parametro GET exegre=1
+  */
   require_once("../model/transacbd.php");
  $agregar=new transacciones_modelo();
 
