@@ -1,4 +1,21 @@
 <?php
+/**
+  * @author Danilo Martinez
+  * @author Diego Valenzuela
+  * @author Aldo Vera
+  * 
+  * Controlador con las transacciones entre la BD mysql-constructora y la vista
+  * Proyecto para asignatura Taller integracion de software INACAP Valdivia
+  * Carrera: Ingenieria en Informatica
+  * Profesor: Mario Alejandro Navarrete Vergara
+  * Julio 2018
+  * @link http://portales.inacap.cl/
+  * 
+  * @package controller
+  * 
+  * Controlador el cual actualiza la lista de planillas
+  * Al actulizar dicha informacion, mostrara un mensaje de confirmacion
+  */
   require_once("../model/transacbd.php");
  $agregar=new transacciones_modelo();
 $id=$_POST['id'];

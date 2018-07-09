@@ -225,6 +225,13 @@ nombre,proveedor,caracteristica,stock,tipodecantidad,preciocompra,precioventa,st
 
            return $consulta;
         }
+        /**
+         * @author Danilo Martinez
+         * obtiene la informacion ya sea cliente o administrador
+         * @param string $correo
+         * @param string $rol
+         * @return array con la informacion requerida
+         */
         public function obtenerDatosEdicion($correo, $rol)
         {
           if($rol == 1) // admin
@@ -238,6 +245,17 @@ nombre,proveedor,caracteristica,stock,tipodecantidad,preciocompra,precioventa,st
           $consulta=$this->db->query($sql);
           return $consulta;
         }
+        /**
+         * @author Danilo Martinez
+         * Guarda los nuevos valores de informacion, ya sea de clientes o administradores
+         * @param string $rol
+         * @param string $correo
+         * @param integer $nombre
+         * @param string $pass
+         * @param integer $apellido
+         * @param integer $telefono
+         * @return integer 0 si el ingreso es exitoso, -1 si ha ocurrido una excepcion
+         */
         public function grabaredicionusuario($rol,$correo,$nombre,$pass,$apellido,$telefono)
         {
           $resp = 0;
@@ -267,6 +285,12 @@ nombre,proveedor,caracteristica,stock,tipodecantidad,preciocompra,precioventa,st
           }
           return $resp;
         }
+        /**
+         * @author Danilo Martinez
+         * Inserta un nuevo tipo de material
+         * @param string $nombre
+         * @return integer 0 si el ingreso es exitoso, -1 si ha ocurrido una excepcion
+         */
         public function agregartipoMateriales($nombre)
         {
           $sql = "insert into tipodematerial (nombre) values('". $nombre ."')";
