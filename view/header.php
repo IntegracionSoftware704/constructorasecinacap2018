@@ -97,22 +97,22 @@
         <div class="item active">
           <a href="#"><img src="../img/imagen1.jpg" /></a>
           <div class="carousel-caption">
-            <h3>Imagen1</h3>
-            <p>Ejemplo de imagen</p>
+            <h3>Proyectos sociales</h3>
+            <p>Comprometidos con los proyectos habitaciones impulsados por el gobierno</p>
           </div>
         </div>
         <div class="item">
           <a href="#"><img src="../img/imagen2.jpg" /></a>
           <div class="carousel-caption">
-            <h3>Imagen2</h3>
-            <p>Ejemplo de imagen</p>
+            <h3>Nos importa el ambiente</h3>
+            <p>Marcamos una diferencia en el ambito ambiental de nuestro pais</p>
           </div>
         </div>
         <div class="item">
           <a href="#"><img src="../img/imagen3.jpg" /></a>
           <div class="carousel-caption">
-            <h3>Imagen3</h3>
-            <p>Ejemplo de imagen</p>
+            <h3>Vanguardistas</h3>
+            <p>Construcciones modernas y bajo pedido de nuestros clientes y empresas</p>
           </div>
         </div>
       </div>

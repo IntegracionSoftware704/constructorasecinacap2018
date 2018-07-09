@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+<!--Inserta planillas a la base de datos de acuerdo a lo requerido por el usuario-->
 <html lang="">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contructora SEC</title>
+    <title>Agregar planilla - Contructora SEC</title>
     <link rel=stylesheet href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../css/menu.css">

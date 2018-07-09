@@ -1,4 +1,24 @@
 <?php
+/**
+  * @author Danilo Martinez
+  * @author Diego Valenzuela
+  * @author Aldo Vera
+  * 
+  * Controlador con las transacciones entre la BD mysql-constructora y la vista
+  * Proyecto para asignatura Taller integracion de software INACAP Valdivia
+  * Carrera: Ingenieria en Informatica
+  * Profesor: Mario Alejandro Navarrete Vergara
+  * Julio 2018
+  * @link http://portales.inacap.cl/
+  * 
+  * @package controller
+  * 
+  * Inserta nuevo usuario a la tabla cliente para el uso de la plataforma de planillas
+  * Se valida el email y que su dominio no sea constructorasec.com
+  * Se valida que los textbox contraseña y repitir contraseña sean iguales
+  * Se valida si el correo ya existe en la tabla clientes, si existe se indica que debe escojer otro
+  * Una vez validado se envia a login.php con un mensaje de exito
+  */
   require_once("../model/transacbd.php");
   $agregar=new transacciones_modelo();
   $correo = $_POST['correo'];
@@ -18,17 +38,17 @@
       }
       else
       {
-        header("Location: ../view/login.php?registro=1");
+        header("Location: ../view/login.php?registro=1"); // registro exitoso
       }
 
     }
     else
     {
-      header("Location: ../view/registro.php?error=1");
+      header("Location: ../view/registro.php?error=1"); // contraseñas no coinciden
     }
   }
   else
   {
-      header("Location: ../view/registro.php?error=2");
+      header("Location: ../view/registro.php?error=2"); // formato de correo incorrecto
   }
 ?>

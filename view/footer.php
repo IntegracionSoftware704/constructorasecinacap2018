@@ -2,7 +2,7 @@
         <div class="row">
         	<div class="col-md-3 footer-brand animated fadeInLeft">
             	<h2 style="color: #549a46;">Constructora SEC</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed massa vestibulum, sollicitudin augue vel, finibus mi. Nullam malesuada hendrerit lectus, malesuada</p>
+                <p>Fundada desde 2017, como una empresa vanguardistas en proyectos de ambitos sociales y bajo pedido, facilitando la vida de nuestros clientes.</p>
                 <p>© 2018 Constructora SEC, Valdivia</p>
             </div>
         	<div class="col-md-4 footer-nav animated fadeInUp">

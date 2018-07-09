@@ -1,6 +1,22 @@
 
 <?php
-
+/**
+  * @author Danilo Martinez
+  * @author Diego Valenzuela
+  * @author Aldo Vera
+  * 
+  * Controlador con las transacciones entre la BD mysql-constructora y la vista
+  * Proyecto para asignatura Taller integracion de software INACAP Valdivia
+  * Carrera: Ingenieria en Informatica
+  * Profesor: Mario Alejandro Navarrete Vergara
+  * Julio 2018
+  * @link http://portales.inacap.cl/
+  * 
+  * @package controller
+  *
+  * De acuerdo con el nombre, correo, asunto y el mensaje, al presionar el boton envia a un email la informacion ingresada
+  * Lo cual lo consigue a traves de los parametros SMTP
+  */
 include "class.phpmailer.php";
 include "class.smtp.php";
 
@@ -45,12 +61,7 @@ $phpmailer->IsHTML(true);
 $phpmailer->Send();
 }
 ?>
-
-
-
 <?php
-
-    
     if("../controller/contacto.php")
     {
         header("Location: ../view/contacto.php");
