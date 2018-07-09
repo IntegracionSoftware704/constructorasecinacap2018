@@ -70,6 +70,7 @@
 </ul>
 <ul class="nav navbar-nav navbar-right">
 <li><a href="javascript:window.open('agregarmaterial.php','','top=50,left=100,width=900,height=500');void 0">Agregar Materiales</a></li>
+<li><a href="javascript:window.open('agregartipomaterial.php','','top=50,left=100,width=900,height=500');void 0">Agregar tipo material</a></li>
 </ul>
 </div><!-- /.nav-collapse -->
 </nav>

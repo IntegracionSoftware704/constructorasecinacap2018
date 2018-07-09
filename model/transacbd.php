@@ -267,5 +267,17 @@ nombre,proveedor,caracteristica,stock,tipodecantidad,preciocompra,precioventa,st
           }
           return $resp;
         }
+        public function agregartipoMateriales($nombre)
+        {
+          $sql = "insert into tipodematerial (nombre) values('". $nombre ."')";
+          if($this->db->query($sql) === true)
+          {
+            return 0;
+          }
+          else
+          {
+            return -1;
+          }
+        }
     }
 ?>
