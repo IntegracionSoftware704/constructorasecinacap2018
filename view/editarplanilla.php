@@ -26,39 +26,55 @@
   <header>
     <div class="container-fluid">
         <h1>Constructora SEC</h1>
-        <h5 style="color:#fff;"><strong>Agregar planilla</strong></h5>
+        <h5 style="color:#fff;"><strong>Editar Planilla</strong></h5>
     </div>
 </header>
 <div class="container-fluid">
   <div class="row">
-<table class="table table-condensed">
+  <table class="table table-condensed">
   <tbody>
     <tr>
-      <th scope="col">Foto</th>
+      <th scope="col">ID</th>
       <th scope="col">Nombre</th>
-      <th scope="col">Valor referencial</th>
-      <th scope="col">Estado</th>
-      <th scope="col"></th>
-
+      <th scope="col">Cantidad</th>
+      <th scope="col">Tipo de Material</th>
+      
     </tr>
-  <form id="form"  role="form" method="post" action="../controller/agregarplanilla.php" enctype="multipart/form-data">
+    <form role="form" method="post" action="../controller/actualizarplanilla.php">
+    <?php
+      require_once("../controller/editarmateriales.php");
+      while($dat=$filas->fetch_assoc())
+      {
+    ?>
    <tr>
-
-      <td><input class="form-control-file" id="imagen" name="imagen" type="file" maxlength="45" required></td>
-
-      <td><input class="form-control" id="nombre" name="nombre" type="text" maxlength="45" required></td>
-
-    <td><input class="form-control" id="cosotreferencial" name="cosotreferencial" type="text" maxlength="45" required></td>
-
-    <td><input class="form-control" id="estado" name="estado" type="text" maxlength="45" required></td>
- 
-      <td class="text-center"> <button type="submit" id="reg" name="reg" class="btn btn-info btn-xs">Agregar</button></td>
+      <td><input class="form-control" readonly="readonly" id="id" name="id" type="text" value="<?php echo $dat["id"]?>" required  ></td>
+      <td><input class="form-control" id="nombre" name="nombre" type="text" value="<?php echo $dat["nombre"]?>" maxlength="45" required></td>
+      
+      
+      
+     
+      
+      <td><input class="form-control" id="stock" name="stock" type="text" value="<?php echo $dat["stock"]?>" maxlength="11" onkeypress="return controltag(event);" required></td>
+ <td>
+      <select class="form-control" style="width:150px;" id="id_tipo" name="id_tipo">
+      <?php
+         require_once("../controller/consultartipodematerial.php");
+        while($dat=$filas->fetch_assoc())
+        {
+          ?>
+          <option id="id_tipo" type="text" value="<?php echo $dat["id"]?>"><?php echo $dat["nombre"]?></option>
+          <?php
+        }
+      ?>
+      </select>
+ </td>
+      <td class="text-center"> <button type="submit" id="reg" name="reg" class="btn btn-info btn-xs">Guardar</button></td>
     </tr>
+  <?php } ?>
     </form>
-
   </tbody>
 </table>
-</div>
+<div>
 </div>
 </body>
 </html>

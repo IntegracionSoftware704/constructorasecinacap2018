@@ -6,6 +6,7 @@
 
 $nombre=$_POST['nombre'];
 $costo = $_POST['cosotreferencial'];
+$estado = $_POST['estado'];
 
 $nombre_img = $_FILES['imagen']['name'];
 $tipo = $_FILES['imagen']['type'];
@@ -26,7 +27,7 @@ if (($nombre_img == !NULL) && ($_FILES['imagen']['size'] <= 200000))
     }
 
 }
- $resultado = $agregar->agregarplanilla($nombre_img,$tipo,$tamano,$nombre,$costo);
+ $resultado = $agregar->agregarplanilla($nombre_img,$tipo,$tamano,$nombre,$costo,$estado);
  echo "<script>window.opener.document.location='../view/gestionplanilla.php?exagre=1';</script>";
  echo "<script>window.close();</script>";
 

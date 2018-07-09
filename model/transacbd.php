@@ -99,9 +99,9 @@ nombre,proveedor,caracteristica,stock,tipodecantidad,preciocompra,precioventa,st
               return -1;
             }
         }
-        public function agregarplanilla($nombre_img,$tipo,$tamano,$nombre,$costo)
+        public function agregarplanilla($nombre_img,$tipo,$tamano,$nombre,$costo,$estado)
         {
-            $sql = "insert into plantilla (foto,nombreplantilla,costototal) values('". $nombre_img ."','". $nombre ."','". $costo ."')";
+            $sql = "insert into plantilla (foto,nombreplantilla,costototal,estado) values('". $nombre_img ."','". $nombre ."','". $costo ."','". $estado ."')";
             if($this->db->query($sql) === true)
             {
               return 0;
@@ -113,11 +113,49 @@ nombre,proveedor,caracteristica,stock,tipodecantidad,preciocompra,precioventa,st
         }
         public function consultarPlanilla()
         {
-             $sql= ("select plantilla.id as id,plantilla.foto as foto,plantilla.nombreplantilla as nombreplantilla,plantilla.costototal as costototal from plantilla");
+             $sql= ("select plantilla.id as id,plantilla.foto as foto,plantilla.nombreplantilla as nombreplantilla,plantilla.costototal as costototal, plantilla.estado as estado from plantilla");
 
             $consulta=$this->db->query($sql);
 
            return $consulta;
+        }
+        public function actualizarplanilla($id,$nombre,$stock,$id_tipo)
+        {
+
+            $sql = "UPDATE plantilla SET nombre='$nombre',stock='$stock',id_tipo='$id_tipo' WHERE id='$id'";
+            if($this->db->query($sql) === true)
+            {
+              return 0;
+            }
+            else
+            {
+              return -1;
+            }
+        }
+        public function editarplanilla($resultado)
+        {
+      			 $sql= "select * from plantilla WHERE id=".$resultado."";
+      			$consulta=$this->db->query($sql);
+      			//$filas=$consulta->fetch_assoc();
+             return $consulta;
+        }
+        public function plantillatipodematerial()
+        {
+              $sql= ("select * from plantillatipodematerial");
+              $consulta=$this->db->query($sql);
+              return $consulta;
+        }
+        public function eliminarplanilla($id)
+        {
+            $sql = "delete from plantilla where id=". $id ."";
+            if($this->db->query($sql) === true)
+            {
+              return true;
+            }
+            else
+            {
+              return false;
+            }
         }
     }
 ?>
