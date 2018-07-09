@@ -19,8 +19,4 @@
 require_once("../model/transacbd.php");
 $datos=new transacciones_modelo();
 $filas=$datos->consultarTipoMaterial();
-<<<<<<< HEAD
-
-=======
->>>>>>> fe330ee8237c848ebc851791cc4bc8cb4c9379f8
 ?>

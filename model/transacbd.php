@@ -190,7 +190,6 @@ nombre,proveedor,caracteristica,stock,tipodecantidad,preciocompra,precioventa,st
               return -1;
             }
         }
-        public function agregarplanilla($nombre_img,$tipo,$tamano,$nombre,$costo,$estado)
         /**
          * @author Aldo Vera
          * Inserta una planilla a la tabla planilla
@@ -201,7 +200,7 @@ nombre,proveedor,caracteristica,stock,tipodecantidad,preciocompra,precioventa,st
          * @param integer $costo
          * @return integer 0 si el ingreso es exitoso, -1 si ha ocurrido una excepcion
          */
-        public function agregarplanilla($nombre_img,$tipo,$tamano,$nombre,$costo)
+        public function agregarplanilla($nombre_img,$tipo,$tamano,$nombre,$costo,$estado)
         {
             $sql = "insert into plantilla (foto,nombreplantilla,costototal,estado) values('". $nombre_img ."','". $nombre ."','". $costo ."','". $estado ."')";
             if($this->db->query($sql) === true)
@@ -226,43 +225,29 @@ nombre,proveedor,caracteristica,stock,tipodecantidad,preciocompra,precioventa,st
 
            return $consulta;
         }
-        public function actualizarplanilla($id,$nombre,$stock,$id_tipo)
+        public function obtenerDatosEdicion($correo, $rol)
         {
-
-            $sql = "UPDATE plantilla SET nombre='$nombre',stock='$stock',id_tipo='$id_tipo' WHERE id='$id'";
-            if($this->db->query($sql) === true)
-            {
-              return 0;
-            }
-            else
-            {
-              return -1;
-            }
+          if($rol == 1) // admin
+          {
+            $sql = "select nombre,contrasena from administrador where correoelectronico='". $correo ."'";
+          } 
+          else // usuario
+          {
+            $sql = "select nombre,apellidopaterno,contrasena,telefono from cliente where correoelectronico='". $correo ."'";
+          }
+          $consulta=$this->db->query($sql);
+          return $consulta;
         }
-        public function editarplanilla($resultado)
+        public function grabaredicionusuario($rol,$correo,$nombre,$pass)
         {
-      			 $sql= "select * from plantilla WHERE id=".$resultado."";
-      			$consulta=$this->db->query($sql);
-      			//$filas=$consulta->fetch_assoc();
-             return $consulta;
-        }
-        public function plantillatipodematerial()
-        {
-              $sql= ("select * from plantillatipodematerial");
-              $consulta=$this->db->query($sql);
-              return $consulta;
-        }
-        public function eliminarplanilla($id)
-        {
-            $sql = "delete from plantilla where id=". $id ."";
-            if($this->db->query($sql) === true)
-            {
-              return true;
-            }
-            else
-            {
-              return false;
-            }
+          if($rol == 1) // admin
+          {
+            $sql = "update administrador set nombre='". $nombre ."',contrasena='". $pass ."' where correoelectronico='". $correo ."'";
+          } 
+          else // usuario
+          {
+            $sql = "";
+          }
         }
     }
 ?>

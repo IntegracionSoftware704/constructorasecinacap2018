@@ -70,7 +70,7 @@
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Bienvenido <?php echo $_SESSION['nom']; ?> <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
                     <li><a href="#"><strong>Rol: <?php echo $_SESSION['rol']; ?></strong></a></li>
-                    <li><a href="ediciondatos.php">Mis datos</a></li>
+                    <li><a href="<?php if($_SESSION['rol']=="administrador"){echo "ediciondatosadmin.php";}else{echo "ediciondatos.php";} ?>">Mis datos</a></li>
                     <li><a href="../modulos/logout.php">Cerrar Sesion</a></li>
                   </ul>
                 </li>

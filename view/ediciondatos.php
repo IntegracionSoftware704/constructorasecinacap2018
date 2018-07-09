@@ -6,12 +6,12 @@
     <div class="row">
       <form class="form-horizontal" method="post" action="../controller/agregarUsuario.php">
         <fieldset>
-<h4>REGISTRO USUARIO</h4>
+<h4>EDICION DATOS</h4>
 <!-- Text input-->
 <div class="form-group">
   <label class="col-md-4 control-label" for="correo">Correo electronico</label>
   <div class="col-md-4">
-    <input disabled id="correo" name="correo" maxlength="50" type="text" placeholder="Correo" class="form-control input-md">
+    <input disabled id="correo" name="correo" maxlength="50" type="text" value="<?php echo $_SESSION['email']; ?>" placeholder="Correo" class="form-control input-md">
 
   </div>
 </div>
