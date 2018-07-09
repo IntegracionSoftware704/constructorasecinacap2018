@@ -303,5 +303,12 @@ nombre,proveedor,caracteristica,stock,tipodecantidad,preciocompra,precioventa,st
             return -1;
           }
         }
+	    public function verplantilla()
+        {
+            $sql = ("SELECT * FROM plantilla ");
+            $consulta=$this->db->query($sql);
+
+            return $consulta;
+        }
     }
 ?>
