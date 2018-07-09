@@ -238,16 +238,34 @@ nombre,proveedor,caracteristica,stock,tipodecantidad,preciocompra,precioventa,st
           $consulta=$this->db->query($sql);
           return $consulta;
         }
-        public function grabaredicionusuario($rol,$correo,$nombre,$pass)
+        public function grabaredicionusuario($rol,$correo,$nombre,$pass,$apellido,$telefono)
         {
-          if($rol == 1) // admin
+          $resp = 0;
+          if($rol === 1) // admin
           {
             $sql = "update administrador set nombre='". $nombre ."',contrasena='". $pass ."' where correoelectronico='". $correo ."'";
+            if($this->db->query($sql) === true)
+            {
+              $resp = 0;
+            }
+            else
+            {
+              $resp = -1;
+            }
           } 
           else // usuario
           {
-            $sql = "";
+            $sql = "update cliente set nombre='". $nombre ."',apellidopaterno='". $apellido ."',contrasena='". $pass ."',telefono=". $telefono ." where correoelectronico='". $correo ."'";
+            if($this->db->query($sql) === true)
+            {
+              $resp = 0;
+            }
+            else
+            {
+              $resp = -1;
+            }
           }
+          return $resp;
         }
     }
 ?>
