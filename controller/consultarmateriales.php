@@ -17,6 +17,7 @@
   * @return array con las filas de tabla material
   */
 require_once("../model/transacbd.php");
+$infoArray = array();
 $datos=new transacciones_modelo();
 $filas=$datos->consultarMateriales();
 ?>
