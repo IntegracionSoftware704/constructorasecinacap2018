@@ -68,7 +68,7 @@
          */
         public function editarMaterial($resultado)
         {
-      			 $sql= "select * from material WHERE id=".$resultado."";
+      			 $sql= "select material.Administrador_id,material.caracteristica,material.id,material.nombre,material.preciocompra,material.precioventa,material.proveedor,material.stock,material.stockminimo,material.tipodecantidad,tipodematerial.nombre as nombretipo from material join tipodematerial on material.Tipodematerial_id=tipodematerial.id where material.id=". $resultado ."";
       			$consulta=$this->db->query($sql);
              return $consulta;
         }

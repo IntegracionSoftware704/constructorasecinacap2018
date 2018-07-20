@@ -62,14 +62,26 @@
       <td><input class="form-control" id="preciocompra" name="preciocompra" type="text" value="<?php echo $dat["preciocompra"]?>" maxlength="11" onkeypress="return controltag(event);" required></td>
       <td><input class="form-control" id="precioventa" name="precioventa" type="text" value="<?php echo $dat["precioventa"]?>" maxlength="11" onkeypress="return controltag(event);" required></td>
 	    <td><input class="form-control" id="stockMin" name="stockMin" type="text" value="<?php echo $dat["stockminimo"]?>" maxlength="11" onkeypress="return controltag(event);" required></td>
+      <?php $tipomaterial = $dat["nombretipo"]; ?>
  <td>
       <select class="form-control" style="width:150px;" id="id_tipo" name="id_tipo">
       <?php
          require_once("../controller/consultartipodematerial.php");
         while($dat=$filas->fetch_assoc())
         {
+          if(strcmp($dat["nombre"],$tipomaterial) === 0)
+          {
+            ?>
+            <option id="id_tipo" type="text" selected="selected" value="<?php echo $dat["id"]?>"><?php echo $dat["nombre"]?></option>
+            <?php
+          }
+          else
+          {
+            ?>
+            <option id="id_tipo" type="text" value="<?php echo $dat["id"]?>"><?php echo $dat["nombre"]?></option>
+            <?php
+          }
           ?>
-          <option id="id_tipo" type="text" value="<?php echo $dat["id"]?>"><?php echo $dat["nombre"]?></option>
           <?php
         }
       ?>
