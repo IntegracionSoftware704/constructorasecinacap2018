@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../css/registro.css">
     <link rel="stylesheet" href="../css/gestionplanilla.css">
     <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="stylesheet" href="../css/planillasmuestra.css">
 
     <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
@@ -30,6 +31,7 @@
     <script src="../js/login.js"></script>
     <script src="../js/solonumeros.js"></script>
     <script src="../js/contacto.js"></script>
+    <script src="../js/planillasmuestra.js"></script>
 
 </head>
 
@@ -57,6 +59,7 @@
 		<ul class="nav navbar-nav">
 				<li><a href="laempresa.php">La Empresa</a></li>
 				<li><a href="contacto.php">Contactanos</a>
+        <li><a href="planillasmuestra.php">Nuestros Proyectos</a>
 				</li>
 		</ul>
         <?php
