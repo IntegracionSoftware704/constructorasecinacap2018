@@ -37,63 +37,95 @@
                         <a class="thumbnail" id="carousel-selector-0">
                             <img src="../img/19.jpg">
                         </a>
+                        <h5>Planilla 1</h5>
+                        <h5><strong>Costo total: $9.000.000<strong></h5>
                     </li>
 
                     <li class="col-sm-3">
                         <a class="thumbnail" id="carousel-selector-1"><img src="../img/plani1.jpg"></a>
+                        <h5>Planilla 2</h5>
+                        <h5><strong>Costo total: $5.000.000<strong></h5>
                     </li>
 
                     <li class="col-sm-3">
                         <a class="thumbnail" id="carousel-selector-2"><img src="../img/Plantilla 1.jpg"></a>
+                        <h5>Planilla 3</h5>
+                        <h5><strong>Costo total: $10.000.000<strong></h5>
                     </li>
 
                     <li class="col-sm-3">
                         <a class="thumbnail" id="carousel-selector-3"><img src="../img/Plantilla2.jpg"></a>
+                        <h5>Planilla 4</h5>
+                        <h5><strong>Costo total: $15.000.000<strong></h5>
                     </li>
 
                     <li class="col-sm-3">
                         <a class="thumbnail" id="carousel-selector-4"><img src="../img/01.jpg"></a>
+                        <h5>Planilla 5</h5>
+                        <h5><strong>Costo total: $12.000.000<strong></h5>
                     </li>
-
                     <li class="col-sm-3">
                         <a class="thumbnail" id="carousel-selector-5"><img src="../img/02.jpg"></a>
+                        <h5>Planilla 6</h5>
+                        <h5><strong>Costo total: $14.000.000<strong></h5>
                     </li>
                     <li class="col-sm-3">
                         <a class="thumbnail" id="carousel-selector-6"><img src="../img/18.jpg"></a>
+                        <h5>Planilla 7</h5>
+                        <h5><strong>Costo total: $16.000.000<strong></h5>
                     </li>
 
                     <li class="col-sm-3">
                         <a class="thumbnail" id="carousel-selector-7"><img src="../img/04.jpg"></a>
+                        <h5>Planilla 8</h5>
+                        <h5><strong>Costo total: $20.000.000<strong></h5>
+                        
                     </li>
 
                     <li class="col-sm-3">
                         <a class="thumbnail" id="carousel-selector-8"><img src="../img/06.jpg"></a>
+                        <h5>Planilla 9</h5>
+                        <h5><strong>Costo total: $21.000.000<strong></h5>
                     </li>
 
                     <li class="col-sm-3">
                         <a class="thumbnail" id="carousel-selector-9"><img src="../img/09.jpg"></a>
+                        <h5>Planilla 10</h5>
+                        <h5><strong>Costo total: $25.000.000<strong></h5>
                     </li>
                     <li class="col-sm-3">
                         <a class="thumbnail" id="carousel-selector-10"><img src="../img/10.jpg"></a>
+                        <h5>Planilla 11</h5>
+                        <h5><strong>Costo total: $23.000.000<strong></h5>
                     </li>
 
                     <li class="col-sm-3">
                         <a class="thumbnail" id="carousel-selector-11"><img src="../img/11.jpg"></a>
+                        <h5>Planilla 12</h5>
+                        <h5><strong>Costo total: $29.000.000<strong></h5>
                     </li>
 
                     <li class="col-sm-3">
                         <a class="thumbnail" id="carousel-selector-12"><img src="../img/12.jpg"></a>
+                        <h5>Planilla 13</h5>
+                        <h5><strong>Costo total: $26.000.000<strong></h5>
                     </li>
 
                     <li class="col-sm-3">
                         <a class="thumbnail" id="carousel-selector-13"><img src="../img/13.jpg"></a>
+                        <h5>Planilla 14</h5>
+                        <h5><strong>Costo total: $35.000.000<strong></h5>
                     </li>
                     <li class="col-sm-3">
                         <a class="thumbnail" id="carousel-selector-14"><img src="../img/14.jpg"></a>
+                        <h5>Planilla 15</h5>
+                        <h5><strong>Costo total: $40.000.000<strong></h5>
                     </li>
 
                     <li class="col-sm-3">
                         <a class="thumbnail" id="carousel-selector-15"><img src="../img/15.jpg"></a>
+                        <h5>Planilla 16</h5>
+                        <h5><strong>Costo total: $33.000.000<strong></h5>
                     </li>
                 </ul>
             </div>
@@ -173,8 +205,18 @@
 
   
 </div>
-
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 
