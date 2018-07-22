@@ -53,11 +53,16 @@
          */
         public function consultarMateriales()
         {
+          $dato = array();
              $sql= ("select material.id as id,material.nombre as nombre,material.proveedor as proveedor,material.caracteristica as caracteristica,material.stock as stock,material.tipodecantidad as tipodecantidad,material.preciocompra as preciocompra,material.precioventa as precioventa,material.stockminimo as stockminimo,tipodematerial.nombre as nombrematerial from material join tipodematerial on material.Tipodematerial_id=tipodematerial.id");
 
             $consulta=$this->db->query($sql);
+            while($dat = $consulta->fetch_assoc())
+            {
+              array_push($dato, $dat);
+            }
 
-           return $consulta;
+           return $dato;
         }
         /**
          * @author Danilo Martinez
@@ -68,9 +73,14 @@
          */
         public function editarMaterial($resultado)
         {
-      			 $sql= "select material.Administrador_id,material.caracteristica,material.id,material.nombre,material.preciocompra,material.precioventa,material.proveedor,material.stock,material.stockminimo,material.tipodecantidad,tipodematerial.nombre as nombretipo from material join tipodematerial on material.Tipodematerial_id=tipodematerial.id where material.id=". $resultado ."";
-      			$consulta=$this->db->query($sql);
-             return $consulta;
+            $datos = array();
+      			 $sql= "select material.id,material.nombre,material.proveedor,material.caracteristica,material.stock,material.tipodecantidad,material.preciocompra,material.precioventa,material.stockminimo,tipodematerial.nombre as nombretipo from material join tipodematerial on material.Tipodematerial_id=tipodematerial.id where material.id=". $resultado ."";
+            $consulta=$this->db->query($sql);
+            while($dat = $consulta->fetch_assoc())
+            {
+              array_push($datos,$dat);
+            }
+             return $datos;
         }
         /**
          * @author Danilo Martinez
@@ -80,9 +90,14 @@
          */
   		public function consultarTipoMaterial()
       {
+            $datos = array();
     			  $sql= ("select * from tipodematerial");
-    			  $consulta=$this->db->query($sql);
-            return $consulta;
+            $consulta=$this->db->query($sql);
+            while($dat = $consulta->fetch_assoc())
+            {
+              array_push($datos,$dat);
+            }
+            return $datos;
       }
       /**
        * @author Danilo Martinez

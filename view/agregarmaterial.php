@@ -71,11 +71,23 @@
          */
          require_once("../controller/consultartipodematerial.php");
 
-    while($dat=$filas->fetch_assoc())
+    foreach($filas as $dato=>$value)
     {
-      ?>
-      <option id="id_tipo" type="text" value="<?php echo $dat["id"]?>"><?php echo $dat["nombre"]?></option>
-      <?php
+      $valid = true;
+      foreach($value as $dato=>$value)
+      {
+        if($valid)
+        {
+          $id = $value;
+          $valid = false;
+        }
+        else
+        {
+          ?>
+          <option id="id_tipo" type="text" value="<?php echo $id?>"><?php echo $value?></option>
+          <?php
+        }
+      }
     }
     ?>
 

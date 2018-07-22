@@ -99,21 +99,25 @@
       </tr>
       <?php
            require_once("../controller/consultarmateriales.php");
-  	  while($dat=$filas->fetch_assoc())
+  	  foreach($filas as $dato=>$value)
   	  {
+            $valid = true;
   		  ?>
       <tr>
-        <td><?php echo $dat["id"]?></td>
-        <td><?php echo $dat["nombre"]?></td>
-        <td><?php echo $dat["proveedor"]?></td>
-        <td><?php echo $dat["caracteristica"]?></td>
-        <td><?php echo $dat["stock"]?></td>
-        <td><?php echo $dat["tipodecantidad"]?></td>
-        <td><?php echo $dat["preciocompra"]?></td>
-        <td><?php echo $dat["precioventa"]?></td>
-  	  <td><?php echo $dat["stockminimo"]?></td>
-      <td><?php echo $dat["nombrematerial"]?></td>
-      <td class="text-center"><button type="button" class="btn btn-info btn-xs" data-toggle="modal" onclick="javascript:window.open('editarmaterial.php?id=<?php echo $dat["id"];?>','','top=50,left=100,width=900,height=500');void 0" data-target="">Editar</button> <button type="button" class="btn btn-danger btn-xs" onclick="javascript:window.open('confirmEliminar.php?id=<?php echo $dat["id"];?>','','top=50,left=250,width=400,height=220');void 0">Eliminar</button></td>
+      <?php
+        foreach($value as $dato=>$value)
+        {
+            if($valid)
+            {
+                $id = $value;
+                $valid = false;
+            }
+      ?>
+        <td><?php echo $value?></td>
+        <?php 
+        }
+        ?>
+        <td class="text-center"><button type="button" class="btn btn-info btn-xs" data-toggle="modal" onclick="javascript:window.open('editarmaterial.php?id=<?php echo $id;?>','','top=50,left=100,width=900,height=500');void 0" data-target="">Editar</button> <button type="button" class="btn btn-danger btn-xs" onclick="javascript:window.open('confirmEliminar.php?id=<?php echo $id;?>','','top=50,left=250,width=400,height=220');void 0">Eliminar</button></td>
       </tr>
        <?php
   	  }

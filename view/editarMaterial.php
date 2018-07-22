@@ -49,47 +49,64 @@
     <form role="form" method="post" action="../controller/actualizarmaterial.php">
     <?php
       require_once("../controller/editarmateriales.php");
-      while($dat=$filas->fetch_assoc())
+      foreach($filas as $dato=>$value)
       {
+        $info = array();
     ?>
    <tr>
-      <td><input class="form-control" readonly="readonly" id="id" name="id" type="text" value="<?php echo $dat["id"]?>" required  ></td>
-      <td><input class="form-control" id="nombre" name="nombre" type="text" value="<?php echo $dat["nombre"]?>" maxlength="45" required></td>
-      <td><input class="form-control" id="proveedor" name="proveedor" type="text" value="<?php echo $dat["proveedor"]?>" maxlength="45"></td>
-      <td><input class="form-control" id="caracteristica" name="caracteristica" type="text" value="<?php echo $dat["caracteristica"]?>" maxlength="45" required></td>
-      <td><input class="form-control" id="stock" name="stock" type="text" value="<?php echo $dat["stock"]?>" maxlength="11" onkeypress="return controltag(event);" required></td>
-      <td><input class="form-control" id="tipoCant" name="tipoCant" type="text" value="<?php echo $dat["tipodecantidad"]?>" maxlength="30" required></td>
-      <td><input class="form-control" id="preciocompra" name="preciocompra" type="text" value="<?php echo $dat["preciocompra"]?>" maxlength="11" onkeypress="return controltag(event);" required></td>
-      <td><input class="form-control" id="precioventa" name="precioventa" type="text" value="<?php echo $dat["precioventa"]?>" maxlength="11" onkeypress="return controltag(event);" required></td>
-	    <td><input class="form-control" id="stockMin" name="stockMin" type="text" value="<?php echo $dat["stockminimo"]?>" maxlength="11" onkeypress="return controltag(event);" required></td>
-      <?php $tipomaterial = $dat["nombretipo"]; ?>
+   <?php
+        foreach($value as $dato=>$value)
+        {
+          array_push($info,$value);
+        } 
+      ?>
+      <td><input class="form-control" readonly="readonly" id="id" name="id" type="text" value="<?php echo $info[0]?>" required  ></td>
+      <td><input class="form-control" id="nombre" name="nombre" type="text" value="<?php echo $info[1]?>" maxlength="45" required></td>
+      <td><input class="form-control" id="proveedor" name="proveedor" type="text" value="<?php echo $info[2]?>" maxlength="45"></td>
+      <td><input class="form-control" id="caracteristica" name="caracteristica" type="text" value="<?php echo $info[3]?>" maxlength="45" required></td>
+      <td><input class="form-control" id="stock" name="stock" type="text" value="<?php echo $info[4]?>" maxlength="11" onkeypress="return controltag(event);" required></td>
+      <td><input class="form-control" id="tipoCant" name="tipoCant" type="text" value="<?php echo $info[5]?>" maxlength="30" required></td>
+      <td><input class="form-control" id="preciocompra" name="preciocompra" type="text" value="<?php echo $info[6]?>" maxlength="11" onkeypress="return controltag(event);" required></td>
+      <td><input class="form-control" id="precioventa" name="precioventa" type="text" value="<?php echo $info[7]?>" maxlength="11" onkeypress="return controltag(event);" required></td>
+	    <td><input class="form-control" id="stockMin" name="stockMin" type="text" value="<?php echo $info[8]?>" maxlength="11" onkeypress="return controltag(event);" required></td>
+      <?php $tipomaterial = $info[9];?>
  <td>
       <select class="form-control" style="width:150px;" id="id_tipo" name="id_tipo">
       <?php
          require_once("../controller/consultartipodematerial.php");
-        while($dat=$filas->fetch_assoc())
-        {
-          if(strcmp($dat["nombre"],$tipomaterial) === 0)
-          {
-            ?>
-            <option id="id_tipo" type="text" selected="selected" value="<?php echo $dat["id"]?>"><?php echo $dat["nombre"]?></option>
-            <?php
+         foreach($filas as $dato=>$value)
+         {
+           $valid = true;
+           foreach($value as $dato=>$value)
+           {
+             if($valid)
+             {
+               $id = $value;
+               $valid = false;
+             }
+             else
+             {
+                if(strcmp($value,$tipomaterial) === 0)
+                {
+                  ?>
+                  <option id="id_tipo" type="text" selected="selected" value="<?php echo $id;?>"><?php echo $value;?></option>
+                  <?php
+                }
+                else
+                {
+                  ?>
+                  <option id="id_tipo" type="text" value="<?php echo $id;?>"><?php echo $value;?></option>
+                  <?php
+                }
+              }
+            }
           }
-          else
-          {
-            ?>
-            <option id="id_tipo" type="text" value="<?php echo $dat["id"]?>"><?php echo $dat["nombre"]?></option>
-            <?php
-          }
-          ?>
-          <?php
-        }
       ?>
       </select>
  </td>
       <td class="text-center"> <button type="submit" id="reg" name="reg" class="btn btn-info btn-xs">Guardar</button></td>
     </tr>
-  <?php } ?>
+        <?php } ?>
     </form>
   </tbody>
 </table>
