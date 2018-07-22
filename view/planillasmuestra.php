@@ -35,65 +35,65 @@
                 <ul class="hide-bullets">
                     <li class="col-sm-3">
                         <a class="thumbnail" id="carousel-selector-0">
-                            <img src="http://placehold.it/150x150&text=zero">
+                            <img src="../img/19.jpg">
                         </a>
                     </li>
 
                     <li class="col-sm-3">
-                        <a class="thumbnail" id="carousel-selector-1"><img src="http://placehold.it/150x150&text=1"></a>
+                        <a class="thumbnail" id="carousel-selector-1"><img src="../img/plani1.jpg"></a>
                     </li>
 
                     <li class="col-sm-3">
-                        <a class="thumbnail" id="carousel-selector-2"><img src="http://placehold.it/150x150&text=2"></a>
+                        <a class="thumbnail" id="carousel-selector-2"><img src="../img/Plantilla 1.jpg"></a>
                     </li>
 
                     <li class="col-sm-3">
-                        <a class="thumbnail" id="carousel-selector-3"><img src="http://placehold.it/150x150&text=3"></a>
+                        <a class="thumbnail" id="carousel-selector-3"><img src="../img/Plantilla2.jpg"></a>
                     </li>
 
                     <li class="col-sm-3">
-                        <a class="thumbnail" id="carousel-selector-4"><img src="http://placehold.it/150x150&text=4"></a>
+                        <a class="thumbnail" id="carousel-selector-4"><img src="../img/01.jpg"></a>
                     </li>
 
                     <li class="col-sm-3">
-                        <a class="thumbnail" id="carousel-selector-5"><img src="http://placehold.it/150x150&text=5"></a>
+                        <a class="thumbnail" id="carousel-selector-5"><img src="../img/02.jpg"></a>
                     </li>
                     <li class="col-sm-3">
-                        <a class="thumbnail" id="carousel-selector-6"><img src="http://placehold.it/150x150&text=6"></a>
-                    </li>
-
-                    <li class="col-sm-3">
-                        <a class="thumbnail" id="carousel-selector-7"><img src="http://placehold.it/150x150&text=7"></a>
+                        <a class="thumbnail" id="carousel-selector-6"><img src="../img/18.jpg"></a>
                     </li>
 
                     <li class="col-sm-3">
-                        <a class="thumbnail" id="carousel-selector-8"><img src="http://placehold.it/150x150&text=8"></a>
+                        <a class="thumbnail" id="carousel-selector-7"><img src="../img/04.jpg"></a>
                     </li>
 
                     <li class="col-sm-3">
-                        <a class="thumbnail" id="carousel-selector-9"><img src="http://placehold.it/150x150&text=9"></a>
-                    </li>
-                    <li class="col-sm-3">
-                        <a class="thumbnail" id="carousel-selector-10"><img src="http://placehold.it/150x150&text=10"></a>
+                        <a class="thumbnail" id="carousel-selector-8"><img src="../img/06.jpg"></a>
                     </li>
 
                     <li class="col-sm-3">
-                        <a class="thumbnail" id="carousel-selector-11"><img src="http://placehold.it/150x150&text=11"></a>
+                        <a class="thumbnail" id="carousel-selector-9"><img src="../img/09.jpg"></a>
+                    </li>
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-10"><img src="../img/10.jpg"></a>
                     </li>
 
                     <li class="col-sm-3">
-                        <a class="thumbnail" id="carousel-selector-12"><img src="http://placehold.it/150x150&text=12"></a>
+                        <a class="thumbnail" id="carousel-selector-11"><img src="../img/11.jpg"></a>
                     </li>
 
                     <li class="col-sm-3">
-                        <a class="thumbnail" id="carousel-selector-13"><img src="http://placehold.it/150x150&text=13"></a>
-                    </li>
-                    <li class="col-sm-3">
-                        <a class="thumbnail" id="carousel-selector-14"><img src="http://placehold.it/150x150&text=14"></a>
+                        <a class="thumbnail" id="carousel-selector-12"><img src="../img/12.jpg"></a>
                     </li>
 
                     <li class="col-sm-3">
-                        <a class="thumbnail" id="carousel-selector-15"><img src="http://placehold.it/150x150&text=15"></a>
+                        <a class="thumbnail" id="carousel-selector-13"><img src="../img/13.jpg"></a>
+                    </li>
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-14"><img src="../img/14.jpg"></a>
+                    </li>
+
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-15"><img src="../img/15.jpg"></a>
                     </li>
                 </ul>
             </div>
@@ -106,7 +106,7 @@
                                 <!-- Carousel items -->
                                 <div class="carousel-inner">
                                     <div class="active item" data-slide-number="0">
-                                        <img src="http://placehold.it/470x480&text=zero"></div>
+                                        <img src="../img/19.jpg"></div>
 
                                     <div class="item" data-slide-number="1">
                                         <img src="../img/plani1.jpg"></div>
@@ -124,7 +124,7 @@
                                         <img src="../img/02.jpg"></div>
                                     
                                     <div class="item" data-slide-number="6">
-                                        <img src="../img/01.jpg"></div>
+                                        <img src="../img/18.jpg"></div>
                                     
                                     <div class="item" data-slide-number="7">
                                         <img src="../img/04.jpg"></div>
