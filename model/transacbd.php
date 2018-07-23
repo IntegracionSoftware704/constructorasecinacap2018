@@ -325,5 +325,15 @@ nombre,proveedor,caracteristica,stock,tipodecantidad,preciocompra,precioventa,st
 
             return $consulta;
         }
+	    public function plantillaCliente($id)
+        {
+            $sql= ("SELECT plantilla.foto, plantilla.nombreplantilla,plantilla.costototal as costototal,plantilla.estado,plantillatipodematerial.cantidad,tipodematerial.nombre as nombretipodematerial,material.nombre as nombrematerial,material.caracteristica as caracteristicamaterial,material.precioventa as valormaterial FROM plantilla JOIN plantillatipodematerial ON plantilla.id=plantillatipodematerial.Plantilla_id JOIN tipodematerial ON plantillatipodematerial.Tipodematerial_id=tipodematerial.id JOIN material ON tipodematerial.id=material.Tipodematerial_id WHERE plantilla.id = $id");
+
+            $consulta=$this->db->query($sql);
+            while($filas=$consulta->fetch_assoc()){
+                $this->plantillaCliente[]=$filas;
+            }
+            return$this->plantillaCliente;
+        }
     }
 ?>
