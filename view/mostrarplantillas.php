@@ -1,57 +1,36 @@
-
-<html>
-<head>
-
-    <link rel="stylesheet" href="../css/plantillas.css">
-<title>Pag 1</title>
-</head>
-<body>
-
-<section id="team" class="pb-5">
+ <?php
+            require_once("header.php");
+            ?>
+ <main role="main">
+<section id="jumbotron text-center">
     <div class="container">
         <h5 class="section-title h1">Plantillas</h5>
-
         <div class="row">
-            <?php
-            require_once("../controller/mostrarplantilla.php");
+            <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
 
-            while($dat=$filas->fetch_assoc())
+                <?php
+            require_once("../controller/mostrarplantilla.php");
+            foreach ($plantillas as $filas)
             {
                 ?>
 
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                        <div class="mainflip">
-                            <div class="frontside">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <p><img class=" img-fluid" src="/plantilla/uploads/<?php echo $dat["foto"]?>"alt="card image"/></p>
-                                        <h4 class="card-title"><?php echo $dat["nombreplantilla"]?></h4>
-                                        <p class="card-text">$<?php echo $dat["costototal"]?></p>
-                                        <a href="#" class="btn btn-primary btn-sm">Eliminar</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="backside">
-                                <div class="card">
-                                    <div class="card-body text-center mt-4">
-                                        <h4 class="card-title"><?php echo $dat["nombreplantilla"]?></h4>
-                                        <a href="verplantilla.php"><img  class=" img-fluid" src="/plantilla/uploads/<?php echo $dat["foto"]?>"alt="card image"/></a>
-                                        <a href="#" class="btn btn-sm">Eliminar</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                                        <p><img style="height: 225px; width: 100%; display: block;" class="card-img-top" src="/plantilla/uploads/<?php echo $filas["foto"]?>"/></p>
+                                        <h4 class="card-title"><?php echo $filas["nombreplantilla"]?></h4>
+                                        <p class="card-text">$<?php echo $filas["costototal"]?></p>
+                                        <a href="verplantilla.php?id=<?php echo $filas["id"]?>"  class="btn btn-primary btn-sm">Agregar</a>
+
+
+
     <?php
 }
 ?>
-
+                </div>
+            </div>
         </div>
-    </div>
+        </div>
 </section>
-</body>
-
-
-</html>
+ </main>
+ <?php
+ require_once("footer.php");
+ ?>
